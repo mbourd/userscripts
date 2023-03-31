@@ -43,6 +43,7 @@
   const _strSelector004 = () => myDeciph("1b5441434250574559544c504746515e184559544c455440465018574041415a5b"); // .atvwebplayersdk-playpause-button
   const _strSelector005 = () => myDeciph("1b5441434250574559544c504746515e184559544c504756595a465018574041415a5b"); // .atvwebplayersdk-playerclose-button
   const _strSelector006 = () => myDeciph("1b5143185b5a5150185145185456415c5a5b18575a4d151b5143185145185b5a5150184559544c5754565e1554"); // .dv-node-dp-action-box .dv-dp-node-playback a
+  const _strSelector007 = () => myDeciph("1b5441434250574559544c504746515e18465e5c4550595058505b4118574041415a5b"); // .atvwebplayersdk-skipelement-button
 
   const string001 = () => myDeciph("6b665e5c4511"); // ^Skip$
   const string002 = () => myDeciph("6b7b504d411570455c465a515011"); // ^Next Episode$
@@ -57,6 +58,7 @@
   const string018 = myDeciph("425441565d5c5b52"); // watching
   const string019 = myDeciph("46415a4515425441565d5c5b52"); // stop watching
   const string020 = myDeciph("5b504d41"); // next
+  const string021 = ()=>myDeciph("465e5c45154750565445"); // skip recap
 
   const _click = () => myDeciph("56595c565e"); // click
 
@@ -93,23 +95,20 @@
   const _setInterval = () => myDeciph("4650417c5b415047435459"); // setInterval
 
   const _number0 = window[_parseInt()](myDeciph("05")); // 0
-  const _number1 = window[_parseInt()](myDeciph("04")); // 1
-  const _number2 = window[_parseInt()](myDeciph("07")); // 2
-  const _number3 = window[_parseInt()](myDeciph("06")); // 3
   const _number23 = window[_parseInt()](myDeciph("0706")); // 23
   const _number30 = window[_parseInt()](myDeciph("0605")); // 30
-  const _number123 = window[_parseInt()](myDeciph("040706")); // 123
-  const _number187 = window[_parseInt()](myDeciph("040d02")); // 187
-  const _number233 = window[_parseInt()](myDeciph("070606")); // 233
-  const _number287 = window[_parseInt()](myDeciph("070d02")); // 287
-  const _number323 = window[_parseInt()](myDeciph("060706")); // 323
-  const _number387 = window[_parseInt()](myDeciph("060d02")); // 387
-  const _number444 = window[_parseInt()](myDeciph("010101")); // 444
-  const _number555 = window[_parseInt()](myDeciph("000000")); // 555
   const _number777 = window[_parseInt()](myDeciph("020202")); // 777
   const _number1987 = window[_parseInt()](myDeciph("040c0d02")); // 1987
+  const _number323 = window[_parseInt()](myDeciph("060706")); // 323
+  const _number123 = window[_parseInt()](myDeciph("040706")); // 123
+  const _number187 = window[_parseInt()](myDeciph("040d02")); // 187
   const _number14750 = window[_parseInt()](myDeciph("0401020005")); // 14750
   const _number15250 = window[_parseInt()](myDeciph("0400070005")); // 15250
+  const _number3 = window[_parseInt()](myDeciph("06")); // 3
+  const _number1 = window[_parseInt()](myDeciph("04")); // 1
+  const _number233 = window[_parseInt()](myDeciph("070606")); // 233
+  const _number287 = window[_parseInt()](myDeciph("070d02")); // 287
+  const _number888 = window[_parseInt()](myDeciph("0d0d0d")); // 888
 
   const _true = () => window[_JSON()][_parse()](myDeciph("41474050")); // true
   const _false = () => window[_JSON()][_parse()](myDeciph("5354594650")); // false
@@ -120,17 +119,18 @@
   const regExpSkip = () => new window[_RegExp()](string001(), string003());
   const regExpNextEpisode = () => new window[_RegExp()](string002(), string003());
 
-  let interval = _null();
-
   let clickedNext = _false();
   let isResumingEpisode = _false();
+
   let isTvShow = _false();
+  let interval = _null();
   let isWatching = _false();
   let isWaitingNext = _false();
   let closeHasClickEvt = _false();
   const addEventClick = async () => {
-    window[_clearInterval()](interval); interval = _null();
+    window[_clearInterval()](interval);
     muteVideos(); hideVideos();
+    interval = _null();
     isResumingEpisode = _true();
     clickedNext = _false();
     isWatching = _true();
@@ -144,7 +144,8 @@
         isResumingEpisode = _false();
         isWatching = _false();
         isWaitingNext = _false();
-        window[_clearInterval()](interval); interval = _null();
+        window[_clearInterval()](interval);
+        interval = _null();
         window[_console][_log](string019);
       });
     }
@@ -192,32 +193,34 @@
     interval = window[_setInterval()](async () => {
       if (isWatching) {
         let skipNext = window[_document()][_querySelector()](_strSelector002());
+        let skipRecap = window[_document()][_querySelector()](_strSelector007());
         let next = window[_document()][_querySelector()](_strSelector003());
         let playPause = () => window[_document()][_querySelector()](_strSelector004());
         let video = () => window[_document()][_querySelectorAll()](string011())[_number0];
 
         if (video()[_readyState()] <= _number3) {
-          window[_clearInterval()](interval); interval = _null();
+          window[_clearInterval()](interval);
           muteVideos(); hideVideos();
-          await sleep(_number1);
           executeIntervalCheck();
           return;
         }
 
         if (next && !isWaitingNext) {
-          window[_clearInterval()](interval); interval = _null();
+          window[_clearInterval()](interval);
           isWaitingNext = _true();
           clickedNext = _false();
           isResumingEpisode = _false();
           window[_console][_log](string014);
+          muteVideos(_false()); hideVideos(string012());
           playPause()[_click()]();
           executeIntervalCheck();
           return;
         }
 
         if (next && isWaitingNext && !clickedNext) {
+          muteVideos(_false()); hideVideos(string012());
           if (video()[_duration()] - video()[_currentTime()] <= _number23) {
-            window[_clearInterval()](interval); interval = _null();
+            window[_clearInterval()](interval);
             playPause()[_click()]();
             await sleep(_number777 + getRandomArbitrary(_number0, _number30));
             muteVideos(); hideVideos();
@@ -230,46 +233,46 @@
           return;
         }
 
-        if (skipNext[_innerText()][_match](regExpSkip()) && !next) {
+        if ((isWaitingNext || isResumingEpisode) && skipNext[_innerText()][_match](regExpSkip()) && !next) {
+          // window[_clearInterval()](interval);
           isWaitingNext = _false();
           isResumingEpisode = _false();
+          // playPause()[_click()]();
+          await sleep(_number1987 + getRandomArbitrary(_number233, _number323));
+          // if (video()[_readyState()] <= _number3) { return; }
+          // await sleep(_number1);
           playPause()[_click()]();
-          await sleep(_number387 + getRandomArbitrary(_number1, _number30));
-
-          if (video()[_readyState()] <= _number3) {
-            window[_clearInterval()](interval); interval = _null();
-            await sleep(_number1);
-            executeIntervalCheck();
-            return;
-          }
-
-          window[_clearInterval()](interval); interval = _null();
-          await sleep(_number1);
-          playPause()[_click()]();
-          await sleep(_number777 + getRandomArbitrary(_number0, _number30));
+          await sleep(_number777 + getRandomArbitrary(_number1, _number30));
           skipNext[_click()]();
           window[_console][_log](string015);
-          while (video()[_readyState()] <= _number3) { await sleep(_number23); }
-          await sleep(_number123 + getRandomArbitrary(_number0, _number30));
-          playPause()[_click()]();
+          // await sleep(_number123 + getRandomArbitrary(_number0, _number30));
           muteVideos(_false()); hideVideos(string012());
-          executeIntervalCheck();
+          // if (video()[_readyState()] <= _number3) { await sleep(_number1); return; }
+          playPause()[_click()]();
+          // executeIntervalCheck();
           return;
+        }
+
+        if (skipRecap) {
+          window[_console][_log](string021());
+          muteVideos(_false()); hideVideos(string012());
+          await sleep(_number777 + getRandomArbitrary(_number1, _number30));
+          skipRecap[_click()]();
+          muteVideos(_false()); hideVideos(string012());
         }
 
         if ((!isWaitingNext && !isResumingEpisode || skipNext[_innerText()][_match](regExpNextEpisode())) && !next) {
           isResumingEpisode = _false();
           isWaitingNext = _false();
           muteVideos(_false()); hideVideos(string012());
-          window[_clearInterval()](interval); interval = _null();
+          window[_clearInterval()](interval);
           executeIntervalCheck();
         }
       }
     }, (() => {
       let t = isWaitingNext || isResumingEpisode
-        ? getRandomArbitrary(_number444, _number555)
         // ? getRandomArbitrary(_number123, _number187)
-        // ? getRandomArbitrary(_number1, _number3)
+        ? getRandomArbitrary(_number777, _number888)
         : getRandomArbitrary(_number14750, _number15250)
         ;
       // window[_console][_log]('start interval check : ' + t);
