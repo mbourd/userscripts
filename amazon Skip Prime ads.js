@@ -93,19 +93,23 @@
   const _setInterval = () => myDeciph("4650417c5b415047435459"); // setInterval
 
   const _number0 = window[_parseInt()](myDeciph("05")); // 0
+  const _number1 = window[_parseInt()](myDeciph("04")); // 1
+  const _number2 = window[_parseInt()](myDeciph("07")); // 2
+  const _number3 = window[_parseInt()](myDeciph("06")); // 3
   const _number23 = window[_parseInt()](myDeciph("0706")); // 23
   const _number30 = window[_parseInt()](myDeciph("0605")); // 30
-  const _number777 = window[_parseInt()](myDeciph("020202")); // 777
-  const _number1987 = window[_parseInt()](myDeciph("040c0d02")); // 1987
-  const _number323 = window[_parseInt()](myDeciph("060706")); // 323
   const _number123 = window[_parseInt()](myDeciph("040706")); // 123
   const _number187 = window[_parseInt()](myDeciph("040d02")); // 187
-  const _number14750 = window[_parseInt()](myDeciph("0401020005")); // 14750
-  const _number15250 = window[_parseInt()](myDeciph("0400070005")); // 15250
-  const _number3 = window[_parseInt()](myDeciph("06")); // 3
-  const _number1 = window[_parseInt()](myDeciph("04")); // 1
   const _number233 = window[_parseInt()](myDeciph("070606")); // 233
   const _number287 = window[_parseInt()](myDeciph("070d02")); // 287
+  const _number323 = window[_parseInt()](myDeciph("060706")); // 323
+  const _number387 = window[_parseInt()](myDeciph("060d02")); // 387
+  const _number444 = window[_parseInt()](myDeciph("010101")); // 444
+  const _number555 = window[_parseInt()](myDeciph("000000")); // 555
+  const _number777 = window[_parseInt()](myDeciph("020202")); // 777
+  const _number1987 = window[_parseInt()](myDeciph("040c0d02")); // 1987
+  const _number14750 = window[_parseInt()](myDeciph("0401020005")); // 14750
+  const _number15250 = window[_parseInt()](myDeciph("0400070005")); // 15250
 
   const _true = () => window[_JSON()][_parse()](myDeciph("41474050")); // true
   const _false = () => window[_JSON()][_parse()](myDeciph("5354594650")); // false
@@ -116,18 +120,17 @@
   const regExpSkip = () => new window[_RegExp()](string001(), string003());
   const regExpNextEpisode = () => new window[_RegExp()](string002(), string003());
 
+  let interval = _null();
+
   let clickedNext = _false();
   let isResumingEpisode = _false();
-
   let isTvShow = _false();
-  let interval = _null();
   let isWatching = _false();
   let isWaitingNext = _false();
   let closeHasClickEvt = _false();
   const addEventClick = async () => {
-    window[_clearInterval()](interval);
+    window[_clearInterval()](interval); interval = _null();
     muteVideos(); hideVideos();
-    interval = _null();
     isResumingEpisode = _true();
     clickedNext = _false();
     isWatching = _true();
@@ -141,8 +144,7 @@
         isResumingEpisode = _false();
         isWatching = _false();
         isWaitingNext = _false();
-        window[_clearInterval()](interval);
-        interval = _null();
+        window[_clearInterval()](interval); interval = _null();
         window[_console][_log](string019);
       });
     }
@@ -194,10 +196,16 @@
         let playPause = () => window[_document()][_querySelector()](_strSelector004());
         let video = () => window[_document()][_querySelectorAll()](string011())[_number0];
 
-        if (video()[_readyState()] <= _number3) { muteVideos(); hideVideos(); return; }
+        if (video()[_readyState()] <= _number3) {
+          window[_clearInterval()](interval); interval = _null();
+          muteVideos(); hideVideos();
+          await sleep(_number1);
+          executeIntervalCheck();
+          return;
+        }
 
         if (next && !isWaitingNext) {
-          window[_clearInterval()](interval);
+          window[_clearInterval()](interval); interval = _null();
           isWaitingNext = _true();
           clickedNext = _false();
           isResumingEpisode = _false();
@@ -209,7 +217,7 @@
 
         if (next && isWaitingNext && !clickedNext) {
           if (video()[_duration()] - video()[_currentTime()] <= _number23) {
-            window[_clearInterval()](interval);
+            window[_clearInterval()](interval); interval = _null();
             playPause()[_click()]();
             await sleep(_number777 + getRandomArbitrary(_number0, _number30));
             muteVideos(); hideVideos();
@@ -226,9 +234,16 @@
           isWaitingNext = _false();
           isResumingEpisode = _false();
           playPause()[_click()]();
-          await sleep(_number287 + getRandomArbitrary(_number1, _number30));
-          if (video()[_readyState()] <= _number3) { return; }
-          window[_clearInterval()](interval);
+          await sleep(_number387 + getRandomArbitrary(_number1, _number30));
+
+          if (video()[_readyState()] <= _number3) {
+            window[_clearInterval()](interval); interval = _null();
+            await sleep(_number1);
+            executeIntervalCheck();
+            return;
+          }
+
+          window[_clearInterval()](interval); interval = _null();
           await sleep(_number1);
           playPause()[_click()]();
           await sleep(_number777 + getRandomArbitrary(_number0, _number30));
@@ -246,14 +261,15 @@
           isResumingEpisode = _false();
           isWaitingNext = _false();
           muteVideos(_false()); hideVideos(string012());
-          window[_clearInterval()](interval);
+          window[_clearInterval()](interval); interval = _null();
           executeIntervalCheck();
         }
       }
     }, (() => {
       let t = isWaitingNext || isResumingEpisode
+        ? getRandomArbitrary(_number444, _number555)
         // ? getRandomArbitrary(_number123, _number187)
-        ? getRandomArbitrary(_number1, _number3)
+        // ? getRandomArbitrary(_number1, _number3)
         : getRandomArbitrary(_number14750, _number15250)
         ;
       // window[_console][_log]('start interval check : ' + t);
