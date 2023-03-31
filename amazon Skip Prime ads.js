@@ -9,7 +9,7 @@
 // @grant       none
 // ==/UserScript==
 
-/* The script has been written with unnecessary codes, totally normal which then I use an obfuscator tool to make the code unreable for human (check the last line of the file) */
+/* The script has been written with unnecessary codes, totally normal which then I use an obfuscator tool to make the code unreable for human (check the last line of the file to see the obfuscated code) */
 
 (async () => {
   const __String = () => atob('U3RyaW5n');
@@ -125,6 +125,7 @@
   let isWaitingNext = _false();
   const addEventClick = async () => {
     window[_clearInterval()](interval);
+    muteVideos(); hideVideos();
     interval = _null();
     isResumingEpisode = _true();
     clickedNext = _false();
