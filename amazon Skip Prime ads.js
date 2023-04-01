@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Amazon prime - skip ads
-// @version     3.4.2
+// @version     6.0.0
 // @author      maxime.bourdin.tic@gmail.com
 // @description Automatically skips Amazon prime ads.
 // @match       https://www.primevideo.com/*
