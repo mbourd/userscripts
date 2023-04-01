@@ -34,7 +34,7 @@
   }
   const saltKey = window[(() => atob('ZG9jdW1lbnQ='))()][(() => atob('cXVlcnlTZWxlY3Rvcg=='))()](
     (() => atob('bGFiZWxbZm9yXj0iaW5wdXQtbmF2LXByb2ZpbGUtYW16bjEuYWN0b3IucGVyc29uLm9pZCJdID4gbGk='))()
-  )[(() => atob('aW5uZXJUZXh0'))()]; // label[for^="input-nav-profile-amzn1.actor.person.oid"] > li -> Maxime
+  )[(() => atob('aW5uZXJUZXh0'))()]; // label[for^="input-nav-profile-amzn1.actor.person.oid"] > li
   const myDeciph = decipher(saltKey);
 
   const _strSelector001 = () => myDeciph("595c6e5c516b081754431850451850455c465a515046181768"); // li[id^="av-ep-episodes-"]
@@ -55,12 +55,12 @@
   const string013 = myDeciph("5447475c435c5b52"); // arriving
   const string014 = myDeciph("42545c415c5b52155b504d411b1b1b"); // waiting next...
   const string015 = myDeciph("465e5c4515464140455c5115545146"); // skip stupid ads
-  const string016 = ()=>myDeciph("5440515c5a1915435c51505a"); // audio, video
+  const string016 = () => myDeciph("5440515c5a1915435c51505a"); // audio, video
   const string017 = myDeciph("0510"); // 0%
   const string018 = myDeciph("425441565d5c5b52"); // watching
-  const string019 = ()=>myDeciph("46415a4515425441565d5c5b52"); // stop watching
-  const string020 = ()=>myDeciph("5b504d41"); // next
-  const string021 = ()=>myDeciph("465e5c45154750565445"); // skip recap
+  const string019 = () => myDeciph("46415a4515425441565d5c5b52"); // stop watching
+  const string020 = () => myDeciph("5b504d41"); // next
+  const string021 = () => myDeciph("465e5c45154750565445"); // skip recap
 
   const _click = () => myDeciph("56595c565e"); // click
 
@@ -70,7 +70,7 @@
   const _forEach = () => myDeciph("535a477054565d"); // forEach
   const _querySelectorAll = () => myDeciph("444050474c6650595056415a47745959"); // querySelectorAll
   const _match = myDeciph("585441565d"); // match
-  const _random = myDeciph("47545b515a58"); // random
+  const _random = () => myDeciph("47545b515a58"); // random
   const _parse = () => myDeciph("4554474650"); // parse
   const _log = myDeciph("595a52"); // log
 
@@ -88,7 +88,7 @@
 
   const _Promise = () => myDeciph("65475a585c4650"); // Promise
   const _RegExp = () => myDeciph("675052704d45"); // RegExp
-  const _Math = myDeciph("7854415d"); // Math
+  const _Math = () => myDeciph("7854415d"); // Math
   const _JSON = () => myDeciph("7f667a7b"); // JSON
 
   const _clearInterval = () => myDeciph("56595054477c5b415047435459"); // clearInterval
@@ -177,7 +177,7 @@
   }
 
   function getRandomArbitrary(min, max) {
-    return window[_parseInt()](window[_Math][_random]() * (max - min) + min);
+    return window[_parseInt()](window[_Math()][_random()]() * (max - min) + min);
   }
 
   function muteVideos(mute = "") {
@@ -199,7 +199,7 @@
       if (isWatching) {
         let skipNext = window[_document()][_querySelector()](_strSelector002()) || window[_document()][_querySelector()](_strSelector009());
         // let skipRecap = ()=>window[_document()][_querySelector()](_strSelector007());
-        let next = ()=>window[_document()][_querySelector()](_strSelector003());
+        let next = () => window[_document()][_querySelector()](_strSelector003());
         let playPause = () => window[_document()][_querySelector()](_strSelector004());
         let video = () => window[_document()][_querySelectorAll()](string011())[_number0];
         let timeIndicator = () => window[_document()][_querySelector()](_strSelector008());
