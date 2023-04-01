@@ -9,7 +9,7 @@
 // @grant       none
 // ==/UserScript==
 
-/* The script has been written with unnecessary codes, totally normal which then I use an obfuscator tool to make the code unreable for human (check the last line of the file to see the obfuscated code) */
+/* The script has been written with unnecessary codes, totally normal which then I use an obfuscator tool to make the code unreadable for human (check the last line of the file to see the obfuscated code) */
 
 (() => {
   const __String = () => atob('U3RyaW5n');
@@ -209,7 +209,7 @@
         }
 
         if (timeIndicator()) {
-          muteVideos(false); hideVideos("100%");
+          muteVideos(false); hideVideos(string012());
         }
 
         if (next() && !isWaitingNext) {
@@ -218,12 +218,14 @@
           clickedNext = _false();
           isResumingEpisode = _false();
           window[_console][_log](string014);
+          window[_console][_log]('Next : ' + next()[_innerText()]);
           // playPause()[_click()]();
           executeIntervalCheck();
           return;
         }
 
         if (next() && isWaitingNext && !clickedNext) {
+          window[_console][_log](`remaining : ${video()[_duration()] - video()[_currentTime()]} seconds`);
           if (video()[_duration()] - video()[_currentTime()] <= _number23) {
             // window[_clearInterval()](interval);
             // playPause()[_click()]();
@@ -255,7 +257,7 @@
           return;
         }
 
-        if (!isWaitingNext && !isResumingEpisode && !next()) {
+        if (!isWaitingNext && !isResumingEpisode && !next() && timeIndicator()) {
           isResumingEpisode = _false();
           isWaitingNext = _false();
           window[_clearInterval()](interval);
@@ -263,12 +265,13 @@
         }
       }
     }, (() => {
-      // let t = isWaitingNext || isResumingEpisode
-      //   // ? getRandomArbitrary(_number123, _number187)
-      //   ? getRandomArbitrary(_number777, _number888)
-      //   : getRandomArbitrary(_number14750, _number15250)
-      //   ;
-      let t = getRandomArbitrary(_number233, _number323);
+      let t = isWaitingNext || isResumingEpisode
+        // ? getRandomArbitrary(_number123, _number187)
+        // ? getRandomArbitrary(_number777, _number888)
+        ? getRandomArbitrary(_number233, _number323)
+        : getRandomArbitrary(_number14750, _number15250)
+      ;
+      // let t = getRandomArbitrary(_number233, _number323);
       // window[_console][_log]('start interval check : ' + t);
       return t;
     })());
