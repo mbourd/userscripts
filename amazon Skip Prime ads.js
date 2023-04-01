@@ -9,7 +9,11 @@
 // @grant       none
 // ==/UserScript==
 
-/* The script has been written with unnecessary codes, totally normal which then I use an obfuscator tool to make the code unreadable for human (check the last line of the file to see the obfuscated code) */
+/*
+The script has been written with unnecessary codes, totally normal.
+Then I use an obfuscator tool to make the code unreadable for human
+(check the last line of the file to see the obfuscated code)
+*/
 
 (() => {
   const __String = () => atob('U3RyaW5n');
