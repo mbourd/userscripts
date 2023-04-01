@@ -254,7 +254,7 @@ Unless you replace at line 44 : const saltKey = "Maxime";
 
         if (next() && isWaitingNext && !clickedNext) {
           let c = window[_parseInt()](video()[_duration()] - video()[_currentTime()]);
-          if (tmpCounter < c || tmpCounter === 0) {
+          if (c < tmpCounter || tmpCounter === 0) {
             tmpCounter = c;
             window[_console][_log](`remaining : ${c} seconds`);
           }
@@ -283,27 +283,28 @@ Unless you replace at line 44 : const saltKey = "Maxime";
           // await sleep(_number777 + getRandomArbitrary(_number1, _number30));
           skipNext[_click()]();
           window[_console][_log](string015);
+          muteVideos(false); hideVideos(string012());
           await sleep(_number777 + getRandomArbitrary(_number1, _number30));
           // playPause()[_click()]();
           // executeIntervalCheck();
           return;
         }
 
-        if (!isWaitingNext && !isResumingEpisode && !next() && timeIndicator()) {
-          isResumingEpisode = _false();
-          isWaitingNext = _false();
-          window[_clearInterval()](interval);
-          executeIntervalCheck();
-        }
+        // if (!isWaitingNext && !isResumingEpisode && !next() && timeIndicator()) {
+        //   isResumingEpisode = _false();
+        //   isWaitingNext = _false();
+        //   window[_clearInterval()](interval);
+        //   executeIntervalCheck();
+        // }
       }
     }, (() => {
-      let t = isWaitingNext || isResumingEpisode
-        // ? getRandomArbitrary(_number123, _number187)
-        // ? getRandomArbitrary(_number777, _number888)
-        ? getRandomArbitrary(_number233, _number323)
-        : getRandomArbitrary(_number14750, _number15250)
-      ;
-      // let t = getRandomArbitrary(_number233, _number323);
+      // let t = isWaitingNext || isResumingEpisode
+      //   // ? getRandomArbitrary(_number123, _number187)
+      //   // ? getRandomArbitrary(_number777, _number888)
+      //   ? getRandomArbitrary(_number233, _number323)
+      //   : getRandomArbitrary(_number14750, _number15250)
+      // ;
+      let t = getRandomArbitrary(_number233, _number323);
       // window[_console][_log]('start interval check : ' + t);
       return t;
     })());
