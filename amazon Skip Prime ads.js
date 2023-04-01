@@ -10,9 +10,14 @@
 // ==/UserScript==
 
 /*
+!! NOTE !!
 The script has been written with unnecessary codes, totally normal.
 Then I use an obfuscator tool to make the code unreadable for human
 (check the last line of the file to see the obfuscated code)
+
+!! WARNING !!
+This script is not usable on your side, because strings are encrypted
+Unless you replace at line 44 : const saltKey = "Maxime";
 */
 
 (() => {
@@ -41,15 +46,19 @@ Then I use an obfuscator tool to make the code unreadable for human
   )[(() => atob('aW5uZXJUZXh0'))()]; // label[for^="input-nav-profile-amzn1.actor.person.oid"] > li
   const myDeciph = decipher(saltKey);
 
-  const _strSelector001 = () => myDeciph("595c6e5c516b081754431850451850455c465a515046181768"); // li[id^="av-ep-episodes-"]
-  const _strSelector002 = () => myDeciph("515c431b5441434250574559544c504746515e185c5b535a57544718565a5b41545c5b504715515c430f5b415d18565d5c59511d041c15515c430f5b415d18565d5c59511d061c15515c430f5b415d18565d5c59511d071c"); // div.atvwebplayersdk-infobar-container div:nth-child(1) div:nth-child(3) div:nth-child(2) -> Skip *
-  const _strSelector003 = () => myDeciph("1b5441434250574559544c504746515e185b504d4140455654475118574041415a5b"); // .atvwebplayersdk-nextupcard-button
-  const _strSelector004 = () => myDeciph("1b5441434250574559544c504746515e184559544c455440465018574041415a5b"); // .atvwebplayersdk-playpause-button
-  const _strSelector005 = () => myDeciph("1b5441434250574559544c504746515e184559544c504756595a465018574041415a5b"); // .atvwebplayersdk-playerclose-button
-  const _strSelector006 = () => myDeciph("1b5143185b5a5150185145185456415c5a5b18575a4d151b5143185145185b5a5150184559544c5754565e1554"); // .dv-node-dp-action-box .dv-dp-node-playback a
+  const _atob = () => myDeciph("54415a57"); // atob
+
+  const _strSelector001 = () => myDeciph(window[_atob()]('NTk1YzZlNWM1MTZiMDgxNzU0NDMxODUwNDUxODUwNDU1YzQ2NWE1MTUwNDYxODE3Njg=')); // li[id^="av-ep-episodes-"]
+  const _strSelector002 = () => myDeciph(window[_atob()]('NTE1YzQzMWI1NDQxNDM0MjUwNTc0NTU5NTQ0YzUwNDc0NjUxNWUxODVjNWI1MzVhNTc1NDQ3MTg1NjVhNWI0MTU0NWM1YjUwNDcxNTUxNWM0MzBmNWI0MTVkMTg1NjVkNWM1OTUxMWQwNDFjMTU1MTVjNDMwZjViNDE1ZDE4NTY1ZDVjNTk1MTFkMDYxYzE1NTE1YzQzMGY1YjQxNWQxODU2NWQ1YzU5NTExZDA3MWM=')); // div.atvwebplayersdk-infobar-container div:nth-child(1) div:nth-child(3) div:nth-child(2) -> Skip *
+  const _strSelector003 = () => myDeciph(window[_atob()]('MWI1NDQxNDM0MjUwNTc0NTU5NTQ0YzUwNDc0NjUxNWUxODViNTA0ZDQxNDA0NTU2NTQ0NzUxMTg1NzQwNDE0MTVhNWI=')); // .atvwebplayersdk-nextupcard-button
+  const _strSelector004 = () => myDeciph(window[_atob()]('MWI1NDQxNDM0MjUwNTc0NTU5NTQ0YzUwNDc0NjUxNWUxODQ1NTk1NDRjNDU1NDQwNDY1MDE4NTc0MDQxNDE1YTVi')); // .atvwebplayersdk-playpause-button
+  const _strSelector005 = () => myDeciph(window[_atob()]('MWI1NDQxNDM0MjUwNTc0NTU5NTQ0YzUwNDc0NjUxNWUxODQ1NTk1NDRjNTA0NzU2NTk1YTQ2NTAxODU3NDA0MTQxNWE1Yg==')); // .atvwebplayersdk-playerclose-button
+  const _strSelector006 = () => myDeciph(window[_atob()]('MWI1MTQzMTg1YjVhNTE1MDE4NTE0NTE4NTQ1NjQxNWM1YTViMTg1NzVhNGQxNTFiNTE0MzE4NTE0NTE4NWI1YTUxNTAxODQ1NTk1NDRjNTc1NDU2NWUxNTU0')); // .dv-node-dp-action-box .dv-dp-node-playback a
   const _strSelector007 = () => myDeciph("1b5441434250574559544c504746515e18465e5c4550595058505b4118574041415a5b"); // .atvwebplayersdk-skipelement-button
   const _strSelector008 = () => myDeciph("1b5441434250574559544c504746515e18415c58505c5b515c5654415a471841504d41"); // .atvwebplayersdk-timeindicator-text
   const _strSelector009 = () => myDeciph("1b5441434250574559544c504746515e185c5b535a57544718565a5b41545c5b5047150b15515c43150b15515c430f5b415d18565d5c59511d061c150b15515c43"); // .atvwebplayersdk-infobar-container > div > div:nth-child(3) > div -> Skip **
+  const _strSelector010 = () => myDeciph("4645545b"); // span
+  const _strSelector011 = () => myDeciph(window[_atob()]('MWI1MTQzMTg1YjVhNTE1MDE4NTE0NTE4NTQ1NjQxNWM1YTViMTg1NzVhNGQxNTFiNTE0MzE4NTE0NTE4NWI1YTUxNTAxODQ1NTk1NDRjNTc1NDU2NWU=')); // .dv-node-dp-action-box .dv-dp-node-playback
 
   const string001 = () => myDeciph("6b665e5c4511"); // ^Skip$
   const string002 = () => myDeciph("6b7b504d411570455c465a515011"); // ^Next Episode$
@@ -101,20 +110,20 @@ Then I use an obfuscator tool to make the code unreadable for human
   const _setInterval = () => myDeciph("4650417c5b415047435459"); // setInterval
 
   const _number0 = window[_parseInt()](myDeciph("05")); // 0
+  const _number1 = window[_parseInt()](myDeciph("04")); // 1
+  const _number3 = window[_parseInt()](myDeciph("06")); // 3
   const _number23 = window[_parseInt()](myDeciph("0706")); // 23
   const _number30 = window[_parseInt()](myDeciph("0605")); // 30
-  const _number777 = window[_parseInt()](myDeciph("020202")); // 777
-  const _number1987 = window[_parseInt()](myDeciph("040c0d02")); // 1987
-  const _number323 = window[_parseInt()](myDeciph("060706")); // 323
   const _number123 = window[_parseInt()](myDeciph("040706")); // 123
   const _number187 = window[_parseInt()](myDeciph("040d02")); // 187
-  const _number14750 = window[_parseInt()](myDeciph("0401020005")); // 14750
-  const _number15250 = window[_parseInt()](myDeciph("0400070005")); // 15250
-  const _number3 = window[_parseInt()](myDeciph("06")); // 3
-  const _number1 = window[_parseInt()](myDeciph("04")); // 1
   const _number233 = window[_parseInt()](myDeciph("070606")); // 233
   const _number287 = window[_parseInt()](myDeciph("070d02")); // 287
+  const _number323 = window[_parseInt()](myDeciph("060706")); // 323
+  const _number777 = window[_parseInt()](myDeciph("020202")); // 777
   const _number888 = window[_parseInt()](myDeciph("0d0d0d")); // 888
+  const _number1987 = window[_parseInt()](myDeciph("040c0d02")); // 1987
+  const _number14750 = window[_parseInt()](myDeciph("0401020005")); // 14750
+  const _number15250 = window[_parseInt()](myDeciph("0400070005")); // 15250
 
   const _true = () => window[_JSON()][_parse()](myDeciph("41474050")); // true
   const _false = () => window[_JSON()][_parse()](myDeciph("5354594650")); // false
@@ -136,13 +145,13 @@ Then I use an obfuscator tool to make the code unreadable for human
   let closeHasClickEvt = _false();
   const addEventClick = async () => {
     muteVideos(); hideVideos();
+    window[_console][_log](string018);
     window[_clearInterval()](interval);
     await sleep(_number1987);
     interval = _null();
     isResumingEpisode = _true();
     clickedNext = _false();
     isWatching = _true();
-    window[_console][_log](string018);
     executeIntervalCheck();
     await sleep(_number1987);
 
@@ -160,13 +169,26 @@ Then I use an obfuscator tool to make the code unreadable for human
     }
   }
 
-  window[_document()][_querySelector()](_strSelector006())[_addEventListener()](_click(), () => {
+  // Current episode
+  window[_document()][_querySelector()](_strSelector006())[_addEventListener()](_click(), function () {
     addEventClick();
+    window[_console][_log](
+      window[_document()]
+        [_querySelector()](_strSelector011())
+        [_querySelectorAll()](_strSelector010())
+        [_number1][_innerText()]
+    );
   });
 
+  // For each episode
   [][_forEach()][_call()](window[_document()][_querySelectorAll()](_strSelector001()), (e, i) => {
     isTvShow = _true();
-    e[_addEventListener()](_click(), () => {
+    e[_addEventListener()](_click(), function () {
+      // window[_console][_log](
+      //   e[_querySelector()](
+      //     myDeciph('6e51544154185440415a5854415c5a5b185c516b0817504518415c4159501850455c465a5150461768')
+      //   )[_innerText()]
+      // );
       addEventClick();
     });
   });
@@ -199,6 +221,7 @@ Then I use an obfuscator tool to make the code unreadable for human
   }
 
   function executeIntervalCheck() {
+    let tmpCounter = _number0;
     interval = window[_setInterval()](async () => {
       if (isWatching) {
         let skipNext = window[_document()][_querySelector()](_strSelector002()) || window[_document()][_querySelector()](_strSelector009());
@@ -217,6 +240,7 @@ Then I use an obfuscator tool to make the code unreadable for human
         }
 
         if (next() && !isWaitingNext) {
+          tmpCounter = _number0;
           window[_clearInterval()](interval);
           isWaitingNext = _true();
           clickedNext = _false();
@@ -229,14 +253,18 @@ Then I use an obfuscator tool to make the code unreadable for human
         }
 
         if (next() && isWaitingNext && !clickedNext) {
-          window[_console][_log](`remaining : ${video()[_duration()] - video()[_currentTime()]} seconds`);
+          let c = window[_parseInt()](video()[_duration()] - video()[_currentTime()]);
+          if (tmpCounter < c || tmpCounter === 0) {
+            tmpCounter = c;
+            window[_console][_log](`remaining : ${c} seconds`);
+          }
           if (video()[_duration()] - video()[_currentTime()] <= _number23) {
             // window[_clearInterval()](interval);
             // playPause()[_click()]();
             await sleep(_number777 + getRandomArbitrary(_number0, _number30));
             muteVideos(); hideVideos();
             next()[_click()]();
-            window[_console][_log](string020());
+            window[_console][_log](`${string020()} ${next()[_innerText()]}`);
             clickedNext = _true();
             await sleep(_number1987);
             // executeIntervalCheck();
