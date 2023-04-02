@@ -18,7 +18,7 @@ More code more efficient is the obfuscation
 
 !! WARNING !!
 This script is not usable on your side, because at line 39 strings are now encrypted
-Unless you replace : const saltKey = "Maxime";
+And protected with a salt key, if you wish to know more contact me at my email address
 */
 
 (() => {
