@@ -17,7 +17,7 @@ More code more efficient is the obfuscation
 (check the last line of the file to see the obfuscated code)
 
 !! WARNING !!
-This script is not usable on your side, because at line 49 strings are encrypted
+This script is not usable on your side, because at line 39 strings are now encrypted
 Unless you replace : const saltKey = "Maxime";
 */
 
@@ -31,7 +31,7 @@ Unless you replace : const saltKey = "Maxime";
     [window[___atob()]('bWFw')](charCode => window[window[___atob()]('U3RyaW5n')][window[___atob()]('ZnJvbUNoYXJDb2Rl')](charCode))
     [window[___atob()]('am9pbg==')]('');
   }
-  const saltKey = ()=>window[(() => window[___atob()]('ZG9jdW1lbnQ='))()][(() => window[___atob()]('cXVlcnlTZWxlY3Rvcg=='))()](
+  const saltKey = () => window[(() => window[___atob()]('ZG9jdW1lbnQ='))()][(() => window[___atob()]('cXVlcnlTZWxlY3Rvcg=='))()](
     (() => window[___atob()]('bGFiZWxbZm9yXj0iaW5wdXQtbmF2LXByb2ZpbGUtYW16bjEuYWN0b3IucGVyc29uLm9pZCJdID4gbGk='))()
   )[(() => window[___atob()]('aW5uZXJUZXh0'))()];
   const myDeciph = decipher(saltKey());
