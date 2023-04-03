@@ -47,15 +47,6 @@ And protected with a salt key, if you wish to know more contact me at my email a
   const _parseInt = () => myDeciph(window[_atob()]("M2UyZjNjM2QyYjA3MjAzYQ=="));
   const _setInterval = () => myDeciph(window[_atob()]("M2QyYjNhMDcyMDNhMmIzYzM4MmYyMg=="));
 
-  const _Promise = () => myDeciph(window[_atob()]("MWUzYzIxMjMyNzNkMmI="));
-  const _RegExp = () => myDeciph(window[_atob()]("MWMyYjI5MGIzNjNl"));
-  const _Math = () => myDeciph(window[_atob()]("MDMyZjNhMjY="));
-  const _JSON = () => myDeciph(window[_atob()]("MDQxZDAxMDA="));
-
-  const _true = () => window[_JSON()][_parse()](myDeciph(window[_atob()]("M2EzYzNiMmI=")));
-  const _false = () => window[_JSON()][_parse()](myDeciph(window[_atob()]("MjgyZjIyM2QyYg==")));
-  const _null = () => window[_JSON()][_parse()](myDeciph(window[_atob()]("MjAzYjIyMjI=")));
-
   const _number0 = window[_parseInt()](myDeciph(window[_atob()]("N2U=")));
   const _number1 = window[_parseInt()](myDeciph(window[_atob()]("N2Y=")));
   const _number2 = window[_parseInt()](myDeciph(window[_atob()]("N2M=")));
@@ -73,6 +64,15 @@ And protected with a salt key, if you wish to know more contact me at my email a
   const _number1987 = window[_parseInt()](myDeciph(window[_atob()]("N2Y3Nzc2Nzk=")));
   const _number14750 = window[_parseInt()](myDeciph(window[_atob()]("N2Y3YTc5N2I3ZQ==")));
   const _number15250 = window[_parseInt()](myDeciph(window[_atob()]("N2Y3YjdjN2I3ZQ==")));
+
+  const _Promise = () => myDeciph(window[_atob()]("MWUzYzIxMjMyNzNkMmI="));
+  const _RegExp = () => myDeciph(window[_atob()]("MWMyYjI5MGIzNjNl"));
+  const _Math = () => myDeciph(window[_atob()]("MDMyZjNhMjY="));
+  const _JSON = () => myDeciph(window[_atob()]("MDQxZDAxMDA="));
+
+  const _true = () => window[_JSON()][_parse()](myDeciph(window[_atob()]("M2EzYzNiMmI=")));
+  const _false = () => window[_JSON()][_parse()](myDeciph(window[_atob()]("MjgyZjIyM2QyYg==")));
+  const _null = () => window[_JSON()][_parse()](myDeciph(window[_atob()]("MjAzYjIyMjI=")));
 
   const _strSelector001 = () => myDeciph(window[_atob()]("MjIyNzE1MjcyYTEwNzM2YzJmMzg2MzJiM2U2MzJiM2UyNzNkMjEyYTJiM2Q2MzZjMTM="));
   const _strSelector002 = () => myDeciph(window[_atob()]("MmEyNzM4NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzI3MjAyODIxMmMyZjNjNjMyZDIxMjAzYTJmMjcyMDJiM2M2ZTJhMjczODc0MjAzYTI2NjMyZDI2MjcyMjJhNjY3ZjY3NmUyYTI3Mzg3NDIwM2EyNjYzMmQyNjI3MjIyYTY2N2Q2NzZlMmEyNzM4NzQyMDNhMjY2MzJkMjYyNzIyMmE2NjdjNjc="));
