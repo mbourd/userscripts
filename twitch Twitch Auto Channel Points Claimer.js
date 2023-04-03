@@ -1,18 +1,18 @@
 // ==UserScript==
 // @name Twitch Auto Channel Points Claimer
-// @version 1.6
-// @author 
+// @version     1.6
+// @author      maxime.bourdin.tic@gmail.com
 // @description Automatically claim channel points.
-// @match https://www.twitch.tv/*
-// @match https://dashboard.twitch.tv/*
-// @license MIT
-// @grant none
-// @namespace 
-// @exclude      *://*.twitch.tv/videos/*
-// @exclude      *://*.twitch.tv/*/video/*
-// @exclude      *://*.twitch.tv/embed/*
-// @exclude      *://*.twitch.tv/popout/*
-// @exclude      *://*.twitch.tv/directory/*
+// @match       https://www.twitch.tv/*
+// @match       https://dashboard.twitch.tv/*
+// @license MIT 
+// @grant none  
+// @namespace    
+// @exclude     *://*.twitch.tv/videos/*
+// @exclude     *://*.twitch.tv/*/video/*
+// @exclude     *://*.twitch.tv/embed/*
+// @exclude     *://*.twitch.tv/popout/*
+// @exclude     *://*.twitch.tv/directory/*
 // ==/UserScript==
 
 let MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
