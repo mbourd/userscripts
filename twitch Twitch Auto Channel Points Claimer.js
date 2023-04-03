@@ -5,8 +5,8 @@
 // @description Automatically claim channel points.
 // @match       https://www.twitch.tv/*
 // @match       https://dashboard.twitch.tv/*
-// @license MIT 
-// @grant none  
+// @license     MIT
+// @grant       none  
 // @namespace    
 // @exclude     *://*.twitch.tv/videos/*
 // @exclude     *://*.twitch.tv/*/video/*
