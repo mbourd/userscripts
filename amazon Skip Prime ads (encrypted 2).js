@@ -424,3 +424,7 @@ And protected with a salt key, if you wish to know more contact me at my email a
   //   }, (() => { return 233; })());
   // }
 })();
+
+//Obfuscated
+//Use only obfuscated code in production
+// NOT YET READY...
