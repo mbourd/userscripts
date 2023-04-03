@@ -20,6 +20,7 @@ Use only obfuscated code
 
 !! WARNING !!
 This script is not usable on your side, because at line 40 all strings are now encrypted
+with homemade cipher, function not implemented here because encrypted strings are hard coded
 And protected with a salt key, if you wish to know more contact me at my email address
 */
 
