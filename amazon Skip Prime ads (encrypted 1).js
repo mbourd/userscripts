@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Amazon prime - skip ads
+// @name        Amazon prime - skip ads (encrypted 1)
 // @version     6.0.0
 // @author      maxime.bourdin.tic@gmail.com
 // @description Automatically skips Amazon prime ads.
@@ -96,15 +96,15 @@ And protected with a salt key, if you wish to know more contact me at my email a
   const _opacity = myDeciph(window[_atob()]('NWE0NTU0NTY1YzQxNGM='));
   const _console = myDeciph(window[_atob()]('NTY1YTViNDY1YTU5NTA='));
 
-  const _Promise = () => myDeciph("65475a585c4650");
-  const _RegExp = () => myDeciph("675052704d45");
-  const _Math = () => myDeciph("7854415d");
-  const _JSON = () => myDeciph("7f667a7b");
+  const _Promise = () => myDeciph(window[_atob()]('NjU0NzVhNTg1YzQ2NTA='));
+  const _RegExp = () => myDeciph(window[_atob()]('Njc1MDUyNzA0ZDQ1'));
+  const _Math = () => myDeciph(window[_atob()]('Nzg1NDQxNWQ='));
+  const _JSON = () => myDeciph(window[_atob()]('N2Y2NjdhN2I='));
 
-  const _clearInterval = () => myDeciph("56595054477c5b415047435459");
-  const _setTimeout = () => myDeciph("465041615c58505a4041");
-  const _parseInt = () => myDeciph("45544746507c5b41");
-  const _setInterval = () => myDeciph("4650417c5b415047435459");
+  const _clearInterval = () => myDeciph(window[_atob()]('NTY1OTUwNTQ0NzdjNWI0MTUwNDc0MzU0NTk='));
+  const _setTimeout = () => myDeciph(window[_atob()]('NDY1MDQxNjE1YzU4NTA1YTQwNDE='));
+  const _parseInt = () => myDeciph(window[_atob()]('NDU1NDQ3NDY1MDdjNWI0MQ=='));
+  const _setInterval = () => myDeciph(window[_atob()]('NDY1MDQxN2M1YjQxNTA0NzQzNTQ1OQ=='));
 
   const _number0 = window[_parseInt()](myDeciph("05"));
   const _number1 = window[_parseInt()](myDeciph("04"));
