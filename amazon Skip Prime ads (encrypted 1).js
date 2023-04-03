@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Amazon prime - skip ads (encrypted 1)
+// @name        Amazon prime video - skip ads (encrypted 1)
 // @version     6.0.0
 // @author      maxime.bourdin.tic@gmail.com
 // @description Automatically skips Amazon prime ads.
@@ -10,7 +10,7 @@
 // ==/UserScript==
 
 /*
-!! NOTE !!
+!! NOTE: !!
 The script has been voluntarily written with unnecessary codes.
 The code structure is not intended to look beautiful or optimized.
 Then I use an obfuscator tool to make the code unreadable and hard to understand for human
@@ -40,94 +40,94 @@ And protected with a salt key, if you wish to know more contact me at my email a
   )[(() => window[___atob()]('aW5uZXJUZXh0'))()];
   const myDeciph = decipher(saltKey());
 
-  const _atob = () => myDeciph(window[___atob()]('NTQ0MTVhNTc='));
+  const _atob = () => myDeciph(window[___atob()]("MmYzYTIxMmM="));
 
-  const _strSelector001 = () => myDeciph(window[_atob()]('NTk1YzZlNWM1MTZiMDgxNzU0NDMxODUwNDUxODUwNDU1YzQ2NWE1MTUwNDYxODE3Njg='));
-  const _strSelector002 = () => myDeciph(window[_atob()]('NTE1YzQzMWI1NDQxNDM0MjUwNTc0NTU5NTQ0YzUwNDc0NjUxNWUxODVjNWI1MzVhNTc1NDQ3MTg1NjVhNWI0MTU0NWM1YjUwNDcxNTUxNWM0MzBmNWI0MTVkMTg1NjVkNWM1OTUxMWQwNDFjMTU1MTVjNDMwZjViNDE1ZDE4NTY1ZDVjNTk1MTFkMDYxYzE1NTE1YzQzMGY1YjQxNWQxODU2NWQ1YzU5NTExZDA3MWM='));
-  const _strSelector003 = () => myDeciph(window[_atob()]('MWI1NDQxNDM0MjUwNTc0NTU5NTQ0YzUwNDc0NjUxNWUxODViNTA0ZDQxNDA0NTU2NTQ0NzUxMTg1NzQwNDE0MTVhNWI='));
-  const _strSelector004 = () => myDeciph(window[_atob()]('MWI1NDQxNDM0MjUwNTc0NTU5NTQ0YzUwNDc0NjUxNWUxODQ1NTk1NDRjNDU1NDQwNDY1MDE4NTc0MDQxNDE1YTVi'));
-  const _strSelector005 = () => myDeciph(window[_atob()]('MWI1NDQxNDM0MjUwNTc0NTU5NTQ0YzUwNDc0NjUxNWUxODQ1NTk1NDRjNTA0NzU2NTk1YTQ2NTAxODU3NDA0MTQxNWE1Yg=='));
-  const _strSelector006 = () => myDeciph(window[_atob()]('MWI1MTQzMTg1YjVhNTE1MDE4NTE0NTE4NTQ1NjQxNWM1YTViMTg1NzVhNGQxNTFiNTE0MzE4NTE0NTE4NWI1YTUxNTAxODQ1NTk1NDRjNTc1NDU2NWUxNTU0'));
-  const _strSelector007 = () => myDeciph(window[_atob()]('MWI1NDQxNDM0MjUwNTc0NTU5NTQ0YzUwNDc0NjUxNWUxODQ2NWU1YzQ1NTA1OTUwNTg1MDViNDExODU3NDA0MTQxNWE1Yg=='));
-  const _strSelector008 = () => myDeciph(window[_atob()]('MWI1NDQxNDM0MjUwNTc0NTU5NTQ0YzUwNDc0NjUxNWUxODQxNWM1ODUwNWM1YjUxNWM1NjU0NDE1YTQ3MTg0MTUwNGQ0MQ=='));
-  const _strSelector009 = () => myDeciph(window[_atob()]('MWI1NDQxNDM0MjUwNTc0NTU5NTQ0YzUwNDc0NjUxNWUxODVjNWI1MzVhNTc1NDQ3MTg1NjVhNWI0MTU0NWM1YjUwNDcxNTBiMTU1MTVjNDMxNTBiMTU1MTVjNDMwZjViNDE1ZDE4NTY1ZDVjNTk1MTFkMDYxYzE1MGIxNTUxNWM0Mw=='));
-  const _strSelector010 = () => myDeciph(window[_atob()]('NDY0NTU0NWI='));
-  const _strSelector011 = () => myDeciph(window[_atob()]('MWI1MTQzMTg1YjVhNTE1MDE4NTE0NTE4NTQ1NjQxNWM1YTViMTg1NzVhNGQxNTFiNTE0MzE4NTE0NTE4NWI1YTUxNTAxODQ1NTk1NDRjNTc1NDU2NWU='));
-  const _strSelector012 = () => myDeciph(window[_atob()]('MWI1NDQxNDM0MjUwNTc0NTU5NTQ0YzUwNDc0NjUxNWUxODU0NTE0MTVjNTg1MDVjNWI1MTVjNTY1NDQxNWE0NzE4NDE1MDRkNDE='));
-  const _strSelector013 = () => myDeciph(window[_atob()]('NTQ0MDUxNWM1YTE5MTU0MzVjNTE1MDVh'));
+  const _strSelector001 = () => myDeciph(window[_atob()]("MjIyNzE1MjcyYTEwNzM2YzJmMzg2MzJiM2U2MzJiM2UyNzNkMjEyYTJiM2Q2MzZjMTM="));
+  const _strSelector002 = () => myDeciph(window[_atob()]("MmEyNzM4NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzI3MjAyODIxMmMyZjNjNjMyZDIxMjAzYTJmMjcyMDJiM2M2ZTJhMjczODc0MjAzYTI2NjMyZDI2MjcyMjJhNjY3ZjY3NmUyYTI3Mzg3NDIwM2EyNjYzMmQyNjI3MjIyYTY2N2Q2NzZlMmEyNzM4NzQyMDNhMjY2MzJkMjYyNzIyMmE2NjdjNjc="));
+  const _strSelector003 = () => myDeciph(window[_atob()]("NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzIwMmIzNjNhM2IzZTJkMmYzYzJhNjMyYzNiM2EzYTIxMjA="));
+  const _strSelector004 = () => myDeciph(window[_atob()]("NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzNlMjIyZjM3M2UyZjNiM2QyYjYzMmMzYjNhM2EyMTIw"));
+  const _strSelector005 = () => myDeciph(window[_atob()]("NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzNlMjIyZjM3MmIzYzJkMjIyMTNkMmI2MzJjM2IzYTNhMjEyMA=="));
+  const _strSelector006 = () => myDeciph(window[_atob()]("NjAyYTM4NjMyMDIxMmEyYjYzMmEzZTYzMmYyZDNhMjcyMTIwNjMyYzIxMzY2ZTYwMmEzODYzMmEzZTYzMjAyMTJhMmI2MzNlMjIyZjM3MmMyZjJkMjU2ZTJm"));
+  const _strSelector007 = () => myDeciph(window[_atob()]("NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzNkMjUyNzNlMmIyMjJiMjMyYjIwM2E2MzJjM2IzYTNhMjEyMA=="));
+  const _strSelector008 = () => myDeciph(window[_atob()]("NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzNhMjcyMzJiMjcyMDJhMjcyZDJmM2EyMTNjNjMzYTJiMzYzYQ=="));
+  const _strSelector009 = () => myDeciph(window[_atob()]("NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzI3MjAyODIxMmMyZjNjNjMyZDIxMjAzYTJmMjcyMDJiM2M2ZTcwNmUyYTI3Mzg2ZTcwNmUyYTI3Mzg3NDIwM2EyNjYzMmQyNjI3MjIyYTY2N2Q2NzZlNzA2ZTJhMjczOA=="));
+  const _strSelector010 = () => myDeciph(window[_atob()]("M2QzZTJmMjA="));
+  const _strSelector011 = () => myDeciph(window[_atob()]("NjAyYTM4NjMyMDIxMmEyYjYzMmEzZTYzMmYyZDNhMjcyMTIwNjMyYzIxMzY2ZTYwMmEzODYzMmEzZTYzMjAyMTJhMmI2MzNlMjIyZjM3MmMyZjJkMjU="));
+  const _strSelector012 = () => myDeciph(window[_atob()]("NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzJmMmEzYTI3MjMyYjI3MjAyYTI3MmQyZjNhMjEzYzYzM2EyYjM2M2E="));
+  const _strSelector013 = () => myDeciph(window[_atob()]("MmYzYjJhMjcyMTYyNmUzODI3MmEyYjIx"));
 
-  const string001 = () => myDeciph(window[_atob()]('NmI2NjVlNWM0NTEx'));
-  const string002 = () => myDeciph(window[_atob()]('NmI3YjUwNGQ0MTE1NzA0NTVjNDY1YTUxNTAxMQ=='));
-  const string003 = () => myDeciph(window[_atob()]('NTI='));
-  const string011 = () => myDeciph(window[_atob()]('NDM1YzUxNTA1YQ=='));
-  const string012 = () => myDeciph(window[_atob()]('MDQwNTA1MTA='));
-  const string013 = myDeciph(window[_atob()]('NTQ0NzQ3NWM0MzVjNWI1Mg=='));
-  const string014 = myDeciph(window[_atob()]('NDI1NDVjNDE1YzViNTIxNTViNTA0ZDQxMWIxYjFi'));
-  const string015 = myDeciph(window[_atob()]('NDY1ZTVjNDUxNTQ2NDE0MDQ1NWM1MTE1NTQ1MTQ2'));
+  const string001 = () => myDeciph(window[_atob()]("MTAxZDI1MjczZTZh"));
+  const string002 = () => myDeciph(window[_atob()]("MTAwMDJiMzYzYTZlMGIzZTI3M2QyMTJhMmI2YQ=="));
+  const string003 = () => myDeciph(window[_atob()]("Mjk="));
+  const string011 = () => myDeciph(window[_atob()]("MzgyNzJhMmIyMQ=="));
+  const string012 = () => myDeciph(window[_atob()]("N2Y3ZTdlNmI="));
+  const string013 = myDeciph(window[_atob()]("MmYzYzNjMjczODI3MjAyOQ=="));
+  const string014 = myDeciph(window[_atob()]("MzkyZjI3M2EyNzIwMjk2ZTIwMmIzNjNhNjA2MDYw"));
+  const string015 = myDeciph(window[_atob()]("M2QyNTI3M2U2ZTNkM2EzYjNlMjcyYTZlMmYyYTNk"));
   // const string016 = () => myDeciph(window[_atob()]('NTQ0MDUxNWM1YTE5MTU0MzVjNTE1MDVh'));
-  const string017 = myDeciph(window[_atob()]('MDUxMA=='));
-  const string018 = myDeciph(window[_atob()]('NDI1NDQxNTY1ZDVjNWI1Mg=='));
-  const string019 = () => myDeciph(window[_atob()]('NDY0MTVhNDUxNTQyNTQ0MTU2NWQ1YzViNTI='));
-  const string020 = () => myDeciph(window[_atob()]('NWI1MDRkNDE='));
-  const string021 = () => myDeciph(window[_atob()]('NDY1ZTVjNDUxNTQ3NTA1NjU0NDU='));
-  const string022 = () => myDeciph(window[_atob()]('NzY1OTVjNTY1ZTE1NWI1MDRkNDExNTQ1NWQ1NDQ2NTA='));
-  const string023 = () => myDeciph(window[_atob()]('NjY1ZTVjNDUxNTQ1NWQ1NDQ2NTA='));
+  const string017 = myDeciph(window[_atob()]("N2U2Yg=="));
+  const string018 = myDeciph(window[_atob()]("MzkyZjNhMmQyNjI3MjAyOQ=="));
+  const string019 = () => myDeciph(window[_atob()]("M2QzYTIxM2U2ZTM5MmYzYTJkMjYyNzIwMjk="));
+  const string020 = () => myDeciph(window[_atob()]("MjAyYjM2M2E="));
+  const string021 = () => myDeciph(window[_atob()]("M2QyNTI3M2U2ZTNjMmIyZDJmM2U="));
+  const string022 = () => myDeciph(window[_atob()]("MDAyYjM2M2E2ZTJkMjIyNzJkMjU2ZTNlMjYyZjNkMmI="));
+  const string023 = () => myDeciph(window[_atob()]("MWQyNTI3M2U2ZTNlMjYyZjNkMmI="));
 
-  const _click = () => myDeciph(window[_atob()]('NTY1OTVjNTY1ZQ=='));
+  const _click = () => myDeciph(window[_atob()]("MmQyMjI3MmQyNQ=="));
 
-  const _addEventListener = () => myDeciph(window[_atob()]('NTQ1MTUxNzA0MzUwNWI0MTc5NWM0NjQxNTA1YjUwNDc='));
-  const _querySelector = () => myDeciph(window[_atob()]('NDQ0MDUwNDc0YzY2NTA1OTUwNTY0MTVhNDc='));
-  const _call = () => myDeciph(window[_atob()]('NTY1NDU5NTk='));
-  const _forEach = () => myDeciph(window[_atob()]('NTM1YTQ3NzA1NDU2NWQ='));
-  const _querySelectorAll = () => myDeciph(window[_atob()]('NDQ0MDUwNDc0YzY2NTA1OTUwNTY0MTVhNDc3NDU5NTk='));
-  const _match = myDeciph(window[_atob()]('NTg1NDQxNTY1ZA=='));
-  const _random = () => myDeciph(window[_atob()]('NDc1NDViNTE1YTU4'));
-  const _parse = () => myDeciph(window[_atob()]('NDU1NDQ3NDY1MA=='));
-  const _log = myDeciph(window[_atob()]('NTk1YTUy'));
+  const _addEventListener = () => myDeciph(window[_atob()]("MmYyYTJhMGIzODJiMjAzYTAyMjczZDNhMmIyMDJiM2M="));
+  const _querySelector = () => myDeciph(window[_atob()]("M2YzYjJiM2MzNzFkMmIyMjJiMmQzYTIxM2M="));
+  const _call = () => myDeciph(window[_atob()]("MmQyZjIyMjI="));
+  const _forEach = () => myDeciph(window[_atob()]("MjgyMTNjMGIyZjJkMjY="));
+  const _querySelectorAll = () => myDeciph(window[_atob()]("M2YzYjJiM2MzNzFkMmIyMjJiMmQzYTIxM2MwZjIyMjI="));
+  const _match = myDeciph(window[_atob()]("MjMyZjNhMmQyNg=="));
+  const _random = () => myDeciph(window[_atob()]("M2MyZjIwMmEyMTIz"));
+  const _parse = () => myDeciph(window[_atob()]("M2UyZjNjM2QyYg=="));
+  const _log = myDeciph(window[_atob()]("MjIyMTI5"));
 
-  const _duration = () => myDeciph(window[_atob()]('NTE0MDQ3NTQ0MTVjNWE1Yg=='));
-  const _currentTime = () => myDeciph(window[_atob()]('NTY0MDQ3NDc1MDViNDE2MTVjNTg1MA=='));
-  const _readyState = () => myDeciph(window[_atob()]('NDc1MDU0NTE0YzY2NDE1NDQxNTA='));
-  const _innerText = () => myDeciph(window[_atob()]('NWM1YjViNTA0NzYxNTA0ZDQx'));
-  const _muted = () => myDeciph(window[_atob()]('NTg0MDQxNTA1MQ=='));
-  const _style = myDeciph(window[_atob()]('NDY0MTRjNTk1MA=='));
-  const _height = myDeciph(window[_atob()]('NWQ1MDVjNTI1ZDQx'));
-  const _width = myDeciph(window[_atob()]('NDI1YzUxNDE1ZA=='));
-  const _document = () => myDeciph(window[_atob()]('NTE1YTU2NDA1ODUwNWI0MQ=='));
-  const _opacity = myDeciph(window[_atob()]('NWE0NTU0NTY1YzQxNGM='));
-  const _console = myDeciph(window[_atob()]('NTY1YTViNDY1YTU5NTA='));
+  const _duration = () => myDeciph(window[_atob()]("MmEzYjNjMmYzYTI3MjEyMA=="));
+  const _currentTime = () => myDeciph(window[_atob()]("MmQzYjNjM2MyYjIwM2ExYTI3MjMyYg=="));
+  const _readyState = () => myDeciph(window[_atob()]("M2MyYjJmMmEzNzFkM2EyZjNhMmI="));
+  const _innerText = () => myDeciph(window[_atob()]("MjcyMDIwMmIzYzFhMmIzNjNh"));
+  const _muted = () => myDeciph(window[_atob()]("MjMzYjNhMmIyYQ=="));
+  const _style = myDeciph(window[_atob()]("M2QzYTM3MjIyYg=="));
+  const _height = myDeciph(window[_atob()]("MjYyYjI3MjkyNjNh"));
+  const _width = myDeciph(window[_atob()]("MzkyNzJhM2EyNg=="));
+  const _document = () => myDeciph(window[_atob()]("MmEyMTJkM2IyMzJiMjAzYQ=="));
+  const _opacity = myDeciph(window[_atob()]("MjEzZTJmMmQyNzNhMzc="));
+  const _console = myDeciph(window[_atob()]("MmQyMTIwM2QyMTIyMmI="));
 
-  const _Promise = () => myDeciph(window[_atob()]('NjU0NzVhNTg1YzQ2NTA='));
-  const _RegExp = () => myDeciph(window[_atob()]('Njc1MDUyNzA0ZDQ1'));
-  const _Math = () => myDeciph(window[_atob()]('Nzg1NDQxNWQ='));
-  const _JSON = () => myDeciph(window[_atob()]('N2Y2NjdhN2I='));
+  const _Promise = () => myDeciph(window[_atob()]("MWUzYzIxMjMyNzNkMmI="));
+  const _RegExp = () => myDeciph(window[_atob()]("MWMyYjI5MGIzNjNl"));
+  const _Math = () => myDeciph(window[_atob()]("MDMyZjNhMjY="));
+  const _JSON = () => myDeciph(window[_atob()]("MDQxZDAxMDA="));
 
-  const _clearInterval = () => myDeciph(window[_atob()]('NTY1OTUwNTQ0NzdjNWI0MTUwNDc0MzU0NTk='));
-  const _setTimeout = () => myDeciph(window[_atob()]('NDY1MDQxNjE1YzU4NTA1YTQwNDE='));
-  const _parseInt = () => myDeciph(window[_atob()]('NDU1NDQ3NDY1MDdjNWI0MQ=='));
-  const _setInterval = () => myDeciph(window[_atob()]('NDY1MDQxN2M1YjQxNTA0NzQzNTQ1OQ=='));
+  const _clearInterval = () => myDeciph(window[_atob()]("MmQyMjJiMmYzYzA3MjAzYTJiM2MzODJmMjI="));
+  const _setTimeout = () => myDeciph(window[_atob()]("M2QyYjNhMWEyNzIzMmIyMTNiM2E="));
+  const _parseInt = () => myDeciph(window[_atob()]("M2UyZjNjM2QyYjA3MjAzYQ=="));
+  const _setInterval = () => myDeciph(window[_atob()]("M2QyYjNhMDcyMDNhMmIzYzM4MmYyMg=="));
 
-  const _number0 = window[_parseInt()](myDeciph("05"));
-  const _number1 = window[_parseInt()](myDeciph("04"));
-  const _number2 = window[_parseInt()](myDeciph("07"));
-  const _number3 = window[_parseInt()](myDeciph("06"));
-  const _number23 = window[_parseInt()](myDeciph("0706"));
-  const _number30 = window[_parseInt()](myDeciph("0605"));
-  const _number123 = window[_parseInt()](myDeciph("040706"));
-  const _number187 = window[_parseInt()](myDeciph("040d02"));
-  const _number233 = window[_parseInt()](myDeciph("070606"));
-  const _number287 = window[_parseInt()](myDeciph("070d02"));
-  const _number323 = window[_parseInt()](myDeciph("060706"));
-  const _number387 = window[_parseInt()](myDeciph("060d02"));
-  const _number777 = window[_parseInt()](myDeciph("020202"));
-  const _number888 = window[_parseInt()](myDeciph("0d0d0d"));
-  const _number1987 = window[_parseInt()](myDeciph("040c0d02"));
-  const _number14750 = window[_parseInt()](myDeciph("0401020005"));
-  const _number15250 = window[_parseInt()](myDeciph("0400070005"));
+  const _number0 = window[_parseInt()](myDeciph(window[_atob()]("N2U=")));
+  const _number1 = window[_parseInt()](myDeciph(window[_atob()]("N2Y=")));
+  const _number2 = window[_parseInt()](myDeciph(window[_atob()]("N2M=")));
+  const _number3 = window[_parseInt()](myDeciph(window[_atob()]("N2Q=")));
+  const _number23 = window[_parseInt()](myDeciph(window[_atob()]("N2M3ZA==")));
+  const _number30 = window[_parseInt()](myDeciph(window[_atob()]("N2Q3ZQ==")));
+  const _number123 = window[_parseInt()](myDeciph(window[_atob()]("N2Y3Yzdk")));
+  const _number187 = window[_parseInt()](myDeciph(window[_atob()]("N2Y3Njc5")));
+  const _number233 = window[_parseInt()](myDeciph(window[_atob()]("N2M3ZDdk")));
+  const _number287 = window[_parseInt()](myDeciph(window[_atob()]("N2M3Njc5")));
+  const _number323 = window[_parseInt()](myDeciph(window[_atob()]("N2Q3Yzdk")));
+  const _number387 = window[_parseInt()](myDeciph(window[_atob()]("N2Q3Njc5")));
+  const _number777 = window[_parseInt()](myDeciph(window[_atob()]("Nzk3OTc5")));
+  const _number888 = window[_parseInt()](myDeciph(window[_atob()]("NzY3Njc2")));
+  const _number1987 = window[_parseInt()](myDeciph(window[_atob()]("N2Y3Nzc2Nzk=")));
+  const _number14750 = window[_parseInt()](myDeciph(window[_atob()]("N2Y3YTc5N2I3ZQ==")));
+  const _number15250 = window[_parseInt()](myDeciph(window[_atob()]("N2Y3YjdjN2I3ZQ==")));
 
-  const _true = () => window[_JSON()][_parse()](myDeciph("41474050"));
-  const _false = () => window[_JSON()][_parse()](myDeciph("5354594650"));
-  const _null = () => window[_JSON()][_parse()](myDeciph("5b405959"));
+  const _true = () => window[_JSON()][_parse()](myDeciph(window[_atob()]("M2EzYzNiMmI=")));
+  const _false = () => window[_JSON()][_parse()](myDeciph(window[_atob()]("MjgyZjIyM2QyYg==")));
+  const _null = () => window[_JSON()][_parse()](myDeciph(window[_atob()]("MjAzYjIyMjI=")));
 
   window[_console][_log](string013);
   // window[_console][_log]("a");
