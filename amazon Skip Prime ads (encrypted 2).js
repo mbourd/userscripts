@@ -35,7 +35,7 @@ And protected with a salt key, if you wish to know more contact me at my email a
     const fromBase64 = buffer =>
       window[window[___atob()]('VWludDhBcnJheQ==')][window[___atob()]('ZnJvbQ==')](window[___atob()](buffer), c => c[window[___atob()]('Y2hhckNvZGVBdA==')](0));
 
-    const PBKDF2 = async (password, salt, iterations,length, hash, algorithm = 'AES-CBC') => {
+    const PBKDF2 = async (password, salt, iterations,length, hash, algorithm = window[___atob()]('QUVTLUNCQw==')) => {
       const keyMaterial = await window[window[___atob()]('Y3J5cHRv')][window[___atob()]('c3VidGxl')][window[___atob()]('aW1wb3J0S2V5')](
         'raw',
         encoder[window[___atob()]('ZW5jb2Rl')](password),
