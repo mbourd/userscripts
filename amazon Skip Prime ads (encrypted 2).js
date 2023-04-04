@@ -47,8 +47,8 @@ And protected with a salt key, if you wish to know more contact me at my email a
       return await window[window[___atob()]('Y3J5cHRv')][window[___atob()]('c3VidGxl')][window[___atob()]('ZGVyaXZlS2V5')](
         {
           name: window[___atob()]('UEJLREYy'),
-          salt: encoder[window[___atob()]('ZW5jb2Rl')](salt),
-          iterations,
+          salt: encoder[window[___atob()]('ZW5jb2Rl')](salt), // reserved prop name (can't rename)
+          iterations, // reserved prop name (can't rename)
           hash
         },
         keyMaterial,
@@ -65,7 +65,7 @@ And protected with a salt key, if you wish to know more contact me at my email a
     const iv = encrypted[window[___atob()]('c2xpY2U=')](0 + salt_len, salt_len + iv_len);
     const key = await PBKDF2(myPassword, salt, 100000, 256, window[___atob()]('U0hBLTM4NA=='), window[___atob()]('QUVTLUdDTQ=='));
     const decrypted = await window[window[___atob()]('Y3J5cHRv')][window[___atob()]('c3VidGxl')][window[___atob()]('ZGVjcnlwdA==')](
-      { name: window[___atob()]('QUVTLUdDTQ=='), iv },
+    { name: window[___atob()]('QUVTLUdDTQ=='), iv /*reserved prop name (can't rename)*/ },
       key,
       encrypted[window[___atob()]('c2xpY2U=')](salt_len + iv_len)
     );
@@ -77,7 +77,7 @@ And protected with a salt key, if you wish to know more contact me at my email a
     (() => window[___atob()]('bGFiZWxbZm9yXj0iaW5wdXQtbmF2LXByb2ZpbGUtYW16bjEuYWN0b3IucGVyc29uLm9pZCJdID4gbGk='))()
   )[(() => window[___atob()]('aW5uZXJUZXh0'))()];
 
-  window['console']['log']('decrypting...');
+  window[window[___atob()]('Y29uc29sZQ==')][window[___atob()]('bG9n')](window[___atob()]('ZGVjcnlwdGluZy4uLg=='));
 
   const _atob = await decipher(saltKey(), window[___atob()](["QWNzZUlIa296amNyb2xrTlpTdmI2TkJ3cFlVZ3VMaktMM3NvMTdXWHhPNlM3UWpNQkZMTlppQ0oyQy9wWlpIeUVZUVMzQT09"][0]));
   const _parseInt = await decipher(saltKey(), window[_atob](["aDdCVDJ2QStYQzNoNENMWGgxcXU2L2QyelZNSGF6THFkTUpmaEtDZ21tTk1QeWpTSUFhbklZdkhTR3ZKRG5lZUhkZ09WU1JTRFVFPQ=="][0]));
@@ -285,6 +285,7 @@ And protected with a salt key, if you wish to know more contact me at my email a
           window[_console][_log](string014);
           // window[_console][_log](next);
           isWaitingNext = _true; clickedNext = _false; isResumingEpisode = _false;
+          tmpCounter = _number0;
           window[_console][_log]('Next : ' + next()[_innerText]);
           await sleep(_number1987);
           executeIntervalCheck();
