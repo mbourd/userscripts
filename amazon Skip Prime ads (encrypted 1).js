@@ -40,158 +40,150 @@ And protected with a salt key, if you wish to know more contact me at my email a
   )[(() => window[___atob()](['aW5uZXJUZXh0'][0]))()];
   const myDeciph = decipher(saltKey());
 
-  const _atob = () => myDeciph(window[___atob()](["MmYzYTIxMmM="][0]));
-  const _parseInt = () => myDeciph(window[_atob()](["M2UyZjNjM2QyYjA3MjAzYQ=="][0]));
-  const _number0 = window[_parseInt()](myDeciph(window[_atob()](["N2U="][0])));
+  const _atob = myDeciph(window[___atob()](["MmYzYTIxMmM="][0]));
+  const _parseInt = myDeciph(window[_atob](["M2UyZjNjM2QyYjA3MjAzYQ=="][0]));
+  const _number0 = window[_parseInt](myDeciph(window[_atob](["N2U="][0])));
 
-  const _clearInterval = () => myDeciph(window[_atob()](["MmQyMjJiMmYzYzA3MjAzYTJiM2MzODJmMjI="][_number0]));
-  const _setTimeout = () => myDeciph(window[_atob()](["M2QyYjNhMWEyNzIzMmIyMTNiM2E="][_number0]));
-  const _setInterval = () => myDeciph(window[_atob()](["M2QyYjNhMDcyMDNhMmIzYzM4MmYyMg=="][_number0]));
+  const _clearInterval = myDeciph(window[_atob](["MmQyMjJiMmYzYzA3MjAzYTJiM2MzODJmMjI="][_number0]));
+  const _setTimeout = myDeciph(window[_atob](["M2QyYjNhMWEyNzIzMmIyMTNiM2E="][_number0]));
+  const _setInterval = myDeciph(window[_atob](["M2QyYjNhMDcyMDNhMmIzYzM4MmYyMg=="][_number0]));
 
-  const _number1 = window[_parseInt()](myDeciph(window[_atob()](["N2Y="][_number0])));
-  const _number2 = window[_parseInt()](myDeciph(window[_atob()](["N2M="][_number0])));
-  const _number3 = window[_parseInt()](myDeciph(window[_atob()](["N2Q="][_number0])));
-  const _number23 = window[_parseInt()](myDeciph(window[_atob()](["N2M3ZA=="][_number0])));
-  const _number30 = window[_parseInt()](myDeciph(window[_atob()](["N2Q3ZQ=="][_number0])));
-  const _number123 = window[_parseInt()](myDeciph(window[_atob()](["N2Y3Yzdk"][_number0])));
-  const _number187 = window[_parseInt()](myDeciph(window[_atob()](["N2Y3Njc5"][_number0])));
-  const _number233 = window[_parseInt()](myDeciph(window[_atob()](["N2M3ZDdk"][_number0])));
-  const _number287 = window[_parseInt()](myDeciph(window[_atob()](["N2M3Njc5"][_number0])));
-  const _number323 = window[_parseInt()](myDeciph(window[_atob()](["N2Q3Yzdk"][_number0])));
-  const _number387 = window[_parseInt()](myDeciph(window[_atob()](["N2Q3Njc5"][_number0])));
-  const _number777 = window[_parseInt()](myDeciph(window[_atob()](["Nzk3OTc5"][_number0])));
-  const _number888 = window[_parseInt()](myDeciph(window[_atob()](["NzY3Njc2"][_number0])));
-  const _number1987 = window[_parseInt()](myDeciph(window[_atob()](["N2Y3Nzc2Nzk="][_number0])));
-  const _number14750 = window[_parseInt()](myDeciph(window[_atob()](["N2Y3YTc5N2I3ZQ=="][_number0])));
-  const _number15250 = window[_parseInt()](myDeciph(window[_atob()](["N2Y3YjdjN2I3ZQ=="][_number0])));
+  const _number1 = window[_parseInt](myDeciph(window[_atob](["N2Y="][_number0])));
+  const _number2 = window[_parseInt](myDeciph(window[_atob](["N2M="][_number0])));
+  const _number3 = window[_parseInt](myDeciph(window[_atob](["N2Q="][_number0])));
+  const _number23 = window[_parseInt](myDeciph(window[_atob](["N2M3ZA=="][_number0])));
+  const _number30 = window[_parseInt](myDeciph(window[_atob](["N2Q3ZQ=="][_number0])));
+  const _number123 = window[_parseInt](myDeciph(window[_atob](["N2Y3Yzdk"][_number0])));
+  const _number187 = window[_parseInt](myDeciph(window[_atob](["N2Y3Njc5"][_number0])));
+  const _number233 = window[_parseInt](myDeciph(window[_atob](["N2M3ZDdk"][_number0])));
+  const _number287 = window[_parseInt](myDeciph(window[_atob](["N2M3Njc5"][_number0])));
+  const _number323 = window[_parseInt](myDeciph(window[_atob](["N2Q3Yzdk"][_number0])));
+  const _number387 = window[_parseInt](myDeciph(window[_atob](["N2Q3Njc5"][_number0])));
+  const _number777 = window[_parseInt](myDeciph(window[_atob](["Nzk3OTc5"][_number0])));
+  const _number888 = window[_parseInt](myDeciph(window[_atob](["NzY3Njc2"][_number0])));
+  const _number1987 = window[_parseInt](myDeciph(window[_atob](["N2Y3Nzc2Nzk="][_number0])));
+  const _number14750 = window[_parseInt](myDeciph(window[_atob](["N2Y3YTc5N2I3ZQ=="][_number0])));
+  const _number15250 = window[_parseInt](myDeciph(window[_atob](["N2Y3YjdjN2I3ZQ=="][_number0])));
 
-  const _Promise = () => myDeciph(window[_atob()](["MWUzYzIxMjMyNzNkMmI="][_number0]));
-  const _RegExp = () => myDeciph(window[_atob()](["MWMyYjI5MGIzNjNl"][_number0]));
-  const _Math = () => myDeciph(window[_atob()](["MDMyZjNhMjY="][_number0]));
-  const _JSON = () => myDeciph(window[_atob()](["MDQxZDAxMDA="][_number0]));
+  const _Promise = myDeciph(window[_atob](["MWUzYzIxMjMyNzNkMmI="][_number0]));
+  const _RegExp = myDeciph(window[_atob](["MWMyYjI5MGIzNjNl"][_number0]));
+  const _Math = myDeciph(window[_atob](["MDMyZjNhMjY="][_number0]));
+  const _JSON = myDeciph(window[_atob](["MDQxZDAxMDA="][_number0]));
 
-  const _true = () => window[_JSON()][_parse()](myDeciph(window[_atob()](["M2EzYzNiMmI="][_number0])));
-  const _false = () => window[_JSON()][_parse()](myDeciph(window[_atob()](["MjgyZjIyM2QyYg=="][_number0])));
-  const _null = () => window[_JSON()][_parse()](myDeciph(window[_atob()](["MjAzYjIyMjI="][_number0])));
+  const _true = window[_JSON][_parse](myDeciph(window[_atob](["M2EzYzNiMmI="][_number0])));
+  const _false = window[_JSON][_parse](myDeciph(window[_atob](["MjgyZjIyM2QyYg=="][_number0])));
+  const _null = window[_JSON][_parse](myDeciph(window[_atob](["MjAzYjIyMjI="][_number0])));
 
-  const _strSelector001 = () => myDeciph(window[_atob()](["MjIyNzE1MjcyYTEwNzM2YzJmMzg2MzJiM2U2MzJiM2UyNzNkMjEyYTJiM2Q2MzZjMTM="][_number0]));
-  const _strSelector002 = () => myDeciph(window[_atob()](["MmEyNzM4NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzI3MjAyODIxMmMyZjNjNjMyZDIxMjAzYTJmMjcyMDJiM2M2ZTJhMjczODc0MjAzYTI2NjMyZDI2MjcyMjJhNjY3ZjY3NmUyYTI3Mzg3NDIwM2EyNjYzMmQyNjI3MjIyYTY2N2Q2NzZlMmEyNzM4NzQyMDNhMjY2MzJkMjYyNzIyMmE2NjdjNjc="][_number0]));
-  const _strSelector003 = () => myDeciph(window[_atob()](["NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzIwMmIzNjNhM2IzZTJkMmYzYzJhNjMyYzNiM2EzYTIxMjA="][_number0]));
-  const _strSelector004 = () => myDeciph(window[_atob()](["NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzNlMjIyZjM3M2UyZjNiM2QyYjYzMmMzYjNhM2EyMTIw"][_number0]));
-  const _strSelector005 = () => myDeciph(window[_atob()](["NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzNlMjIyZjM3MmIzYzJkMjIyMTNkMmI2MzJjM2IzYTNhMjEyMA=="][_number0]));
-  const _strSelector006 = () => myDeciph(window[_atob()](["NjAyYTM4NjMyMDIxMmEyYjYzMmEzZTYzMmYyZDNhMjcyMTIwNjMyYzIxMzY2ZTYwMmEzODYzMmEzZTYzMjAyMTJhMmI2MzNlMjIyZjM3MmMyZjJkMjU2ZTJm"][_number0]));
-  const _strSelector007 = () => myDeciph(window[_atob()](["NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzNkMjUyNzNlMmIyMjJiMjMyYjIwM2E2MzJjM2IzYTNhMjEyMA=="][_number0]));
-  const _strSelector008 = () => myDeciph(window[_atob()](["NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzNhMjcyMzJiMjcyMDJhMjcyZDJmM2EyMTNjNjMzYTJiMzYzYQ=="][_number0]));
-  const _strSelector009 = () => myDeciph(window[_atob()](["NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzI3MjAyODIxMmMyZjNjNjMyZDIxMjAzYTJmMjcyMDJiM2M2ZTcwNmUyYTI3Mzg2ZTcwNmUyYTI3Mzg3NDIwM2EyNjYzMmQyNjI3MjIyYTY2N2Q2NzZlNzA2ZTJhMjczOA=="][_number0]));
-  const _strSelector010 = () => myDeciph(window[_atob()](["M2QzZTJmMjA="][_number0]));
-  const _strSelector011 = () => myDeciph(window[_atob()](["NjAyYTM4NjMyMDIxMmEyYjYzMmEzZTYzMmYyZDNhMjcyMTIwNjMyYzIxMzY2ZTYwMmEzODYzMmEzZTYzMjAyMTJhMmI2MzNlMjIyZjM3MmMyZjJkMjU="][_number0]));
-  const _strSelector012 = () => myDeciph(window[_atob()](["NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzJmMmEzYTI3MjMyYjI3MjAyYTI3MmQyZjNhMjEzYzYzM2EyYjM2M2E="][_number0]));
-  const _strSelector013 = () => myDeciph(window[_atob()](["MmYzYjJhMjcyMTYyNmUzODI3MmEyYjIx"][_number0]));
+  const _strSelector001 = myDeciph(window[_atob](["MjIyNzE1MjcyYTEwNzM2YzJmMzg2MzJiM2U2MzJiM2UyNzNkMjEyYTJiM2Q2MzZjMTM="][_number0]));
+  const _strSelector002 = myDeciph(window[_atob](["MmEyNzM4NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzI3MjAyODIxMmMyZjNjNjMyZDIxMjAzYTJmMjcyMDJiM2M2ZTJhMjczODc0MjAzYTI2NjMyZDI2MjcyMjJhNjY3ZjY3NmUyYTI3Mzg3NDIwM2EyNjYzMmQyNjI3MjIyYTY2N2Q2NzZlMmEyNzM4NzQyMDNhMjY2MzJkMjYyNzIyMmE2NjdjNjc="][_number0]));
+  const _strSelector003 = myDeciph(window[_atob](["NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzIwMmIzNjNhM2IzZTJkMmYzYzJhNjMyYzNiM2EzYTIxMjA="][_number0]));
+  const _strSelector004 = myDeciph(window[_atob](["NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzNlMjIyZjM3M2UyZjNiM2QyYjYzMmMzYjNhM2EyMTIw"][_number0]));
+  const _strSelector005 = myDeciph(window[_atob](["NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzNlMjIyZjM3MmIzYzJkMjIyMTNkMmI2MzJjM2IzYTNhMjEyMA=="][_number0]));
+  const _strSelector006 = myDeciph(window[_atob](["NjAyYTM4NjMyMDIxMmEyYjYzMmEzZTYzMmYyZDNhMjcyMTIwNjMyYzIxMzY2ZTYwMmEzODYzMmEzZTYzMjAyMTJhMmI2MzNlMjIyZjM3MmMyZjJkMjU2ZTJm"][_number0]));
+  const _strSelector007 = myDeciph(window[_atob](["NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzNkMjUyNzNlMmIyMjJiMjMyYjIwM2E2MzJjM2IzYTNhMjEyMA=="][_number0]));
+  const _strSelector008 = myDeciph(window[_atob](["NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzNhMjcyMzJiMjcyMDJhMjcyZDJmM2EyMTNjNjMzYTJiMzYzYQ=="][_number0]));
+  const _strSelector009 = myDeciph(window[_atob](["NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzI3MjAyODIxMmMyZjNjNjMyZDIxMjAzYTJmMjcyMDJiM2M2ZTcwNmUyYTI3Mzg2ZTcwNmUyYTI3Mzg3NDIwM2EyNjYzMmQyNjI3MjIyYTY2N2Q2NzZlNzA2ZTJhMjczOA=="][_number0]));
+  const _strSelector010 = myDeciph(window[_atob](["M2QzZTJmMjA="][_number0]));
+  const _strSelector011 = myDeciph(window[_atob](["NjAyYTM4NjMyMDIxMmEyYjYzMmEzZTYzMmYyZDNhMjcyMTIwNjMyYzIxMzY2ZTYwMmEzODYzMmEzZTYzMjAyMTJhMmI2MzNlMjIyZjM3MmMyZjJkMjU="][_number0]));
+  const _strSelector012 = myDeciph(window[_atob](["NjAyZjNhMzgzOTJiMmMzZTIyMmYzNzJiM2MzZDJhMjU2MzJmMmEzYTI3MjMyYjI3MjAyYTI3MmQyZjNhMjEzYzYzM2EyYjM2M2E="][_number0]));
+  const _strSelector013 = myDeciph(window[_atob](["MmYzYjJhMjcyMTYyNmUzODI3MmEyYjIx"][_number0]));
 
-  const string001 = () => myDeciph(window[_atob()](["MTAxZDI1MjczZTZh"][_number0]));
-  const string002 = () => myDeciph(window[_atob()](["MTAwMDJiMzYzYTZlMGIzZTI3M2QyMTJhMmI2YQ=="][_number0]));
-  const string003 = () => myDeciph(window[_atob()](["Mjk="][_number0]));
-  const string011 = () => myDeciph(window[_atob()](["MzgyNzJhMmIyMQ=="][_number0]));
-  const string012 = () => myDeciph(window[_atob()](["N2Y3ZTdlNmI="][_number0]));
-  const string013 = myDeciph(window[_atob()](["MmYzYzNjMjczODI3MjAyOQ=="][_number0]));
-  const string014 = myDeciph(window[_atob()](["MzkyZjI3M2EyNzIwMjk2ZTIwMmIzNjNhNjA2MDYw"][_number0]));
-  const string015 = myDeciph(window[_atob()](["M2QyNTI3M2U2ZTNkM2EzYjNlMjcyYTZlMmYyYTNk"][_number0]));
-  // const string016 = () => myDeciph(window[_atob()]('NTQ0MDUxNWM1YTE5MTU0MzVjNTE1MDVh'));
-  const string017 = myDeciph(window[_atob()](["N2U2Yg=="][_number0]));
-  const string018 = myDeciph(window[_atob()](["MzkyZjNhMmQyNjI3MjAyOQ=="][_number0]));
-  const string019 = () => myDeciph(window[_atob()](["M2QzYTIxM2U2ZTM5MmYzYTJkMjYyNzIwMjk="][_number0]));
-  const string020 = () => myDeciph(window[_atob()](["MjAyYjM2M2E="][_number0]));
-  const string021 = () => myDeciph(window[_atob()](["M2QyNTI3M2U2ZTNjMmIyZDJmM2U="][_number0]));
-  const string022 = () => myDeciph(window[_atob()](["MDAyYjM2M2E2ZTJkMjIyNzJkMjU2ZTNlMjYyZjNkMmI="][_number0]));
-  const string023 = () => myDeciph(window[_atob()](["MWQyNTI3M2U2ZTNlMjYyZjNkMmI="][_number0]));
+  const string001 = myDeciph(window[_atob](["MTAxZDI1MjczZTZh"][_number0]));
+  const string002 = myDeciph(window[_atob](["MTAwMDJiMzYzYTZlMGIzZTI3M2QyMTJhMmI2YQ=="][_number0]));
+  const string003 = myDeciph(window[_atob](["Mjk="][_number0]));
+  const string011 = myDeciph(window[_atob](["MzgyNzJhMmIyMQ=="][_number0]));
+  const string012 = myDeciph(window[_atob](["N2Y3ZTdlNmI="][_number0]));
+  const string013 = myDeciph(window[_atob](["MmYzYzNjMjczODI3MjAyOQ=="][_number0]));
+  const string014 = myDeciph(window[_atob](["MzkyZjI3M2EyNzIwMjk2ZTIwMmIzNjNhNjA2MDYw"][_number0]));
+  const string015 = myDeciph(window[_atob](["M2QyNTI3M2U2ZTNkM2EzYjNlMjcyYTZlMmYyYTNk"][_number0]));
+  // const string016 = myDeciph(window[_atob]('NTQ0MDUxNWM1YTE5MTU0MzVjNTE1MDVh'));
+  const string017 = myDeciph(window[_atob](["N2U2Yg=="][_number0]));
+  const string018 = myDeciph(window[_atob](["MzkyZjNhMmQyNjI3MjAyOQ=="][_number0]));
+  const string019 = myDeciph(window[_atob](["M2QzYTIxM2U2ZTM5MmYzYTJkMjYyNzIwMjk="][_number0]));
+  const string020 = myDeciph(window[_atob](["MjAyYjM2M2E="][_number0]));
+  const string021 = myDeciph(window[_atob](["M2QyNTI3M2U2ZTNjMmIyZDJmM2U="][_number0]));
+  const string022 = myDeciph(window[_atob](["MDAyYjM2M2E2ZTJkMjIyNzJkMjU2ZTNlMjYyZjNkMmI="][_number0]));
+  const string023 = myDeciph(window[_atob](["MWQyNTI3M2U2ZTNlMjYyZjNkMmI="][_number0]));
 
-  const _click = () => myDeciph(window[_atob()](["MmQyMjI3MmQyNQ=="][_number0]));
+  const _click = myDeciph(window[_atob](["MmQyMjI3MmQyNQ=="][_number0]));
 
-  const _addEventListener = () => myDeciph(window[_atob()](["MmYyYTJhMGIzODJiMjAzYTAyMjczZDNhMmIyMDJiM2M="][_number0]));
-  const _querySelector = () => myDeciph(window[_atob()](["M2YzYjJiM2MzNzFkMmIyMjJiMmQzYTIxM2M="][_number0]));
-  const _call = () => myDeciph(window[_atob()](["MmQyZjIyMjI="][_number0]));
-  const _forEach = () => myDeciph(window[_atob()](["MjgyMTNjMGIyZjJkMjY="][_number0]));
-  const _querySelectorAll = () => myDeciph(window[_atob()](["M2YzYjJiM2MzNzFkMmIyMjJiMmQzYTIxM2MwZjIyMjI="][_number0]));
-  const _match = myDeciph(window[_atob()](["MjMyZjNhMmQyNg=="][_number0]));
-  const _random = () => myDeciph(window[_atob()](["M2MyZjIwMmEyMTIz"][_number0]));
-  const _parse = () => myDeciph(window[_atob()](["M2UyZjNjM2QyYg=="][_number0]));
-  const _log = myDeciph(window[_atob()](["MjIyMTI5"][_number0]));
+  const _addEventListener = myDeciph(window[_atob](["MmYyYTJhMGIzODJiMjAzYTAyMjczZDNhMmIyMDJiM2M="][_number0]));
+  const _querySelector = myDeciph(window[_atob](["M2YzYjJiM2MzNzFkMmIyMjJiMmQzYTIxM2M="][_number0]));
+  const _call = myDeciph(window[_atob](["MmQyZjIyMjI="][_number0]));
+  const _forEach = myDeciph(window[_atob](["MjgyMTNjMGIyZjJkMjY="][_number0]));
+  const _querySelectorAll = myDeciph(window[_atob](["M2YzYjJiM2MzNzFkMmIyMjJiMmQzYTIxM2MwZjIyMjI="][_number0]));
+  const _match = myDeciph(window[_atob](["MjMyZjNhMmQyNg=="][_number0]));
+  const _random = myDeciph(window[_atob](["M2MyZjIwMmEyMTIz"][_number0]));
+  const _parse = myDeciph(window[_atob](["M2UyZjNjM2QyYg=="][_number0]));
+  const _log = myDeciph(window[_atob](["MjIyMTI5"][_number0]));
 
-  const _duration = () => myDeciph(window[_atob()](["MmEzYjNjMmYzYTI3MjEyMA=="][_number0]));
-  const _currentTime = () => myDeciph(window[_atob()](["MmQzYjNjM2MyYjIwM2ExYTI3MjMyYg=="][_number0]));
-  const _readyState = () => myDeciph(window[_atob()](["M2MyYjJmMmEzNzFkM2EyZjNhMmI="][_number0]));
-  const _innerText = () => myDeciph(window[_atob()](["MjcyMDIwMmIzYzFhMmIzNjNh"][_number0]));
-  const _muted = () => myDeciph(window[_atob()](["MjMzYjNhMmIyYQ=="][_number0]));
-  const _style = myDeciph(window[_atob()](["M2QzYTM3MjIyYg=="][_number0]));
-  const _height = myDeciph(window[_atob()](["MjYyYjI3MjkyNjNh"][_number0]));
-  const _width = myDeciph(window[_atob()](["MzkyNzJhM2EyNg=="][_number0]));
-  const _document = () => myDeciph(window[_atob()](["MmEyMTJkM2IyMzJiMjAzYQ=="][_number0]));
-  const _opacity = myDeciph(window[_atob()](["MjEzZTJmMmQyNzNhMzc="][_number0]));
-  const _console = myDeciph(window[_atob()](["MmQyMTIwM2QyMTIyMmI="][_number0]));
+  const _duration = myDeciph(window[_atob](["MmEzYjNjMmYzYTI3MjEyMA=="][_number0]));
+  const _currentTime = myDeciph(window[_atob](["MmQzYjNjM2MyYjIwM2ExYTI3MjMyYg=="][_number0]));
+  const _readyState = myDeciph(window[_atob](["M2MyYjJmMmEzNzFkM2EyZjNhMmI="][_number0]));
+  const _innerText = myDeciph(window[_atob](["MjcyMDIwMmIzYzFhMmIzNjNh"][_number0]));
+  const _muted = myDeciph(window[_atob](["MjMzYjNhMmIyYQ=="][_number0]));
+  const _style = myDeciph(window[_atob](["M2QzYTM3MjIyYg=="][_number0]));
+  const _height = myDeciph(window[_atob](["MjYyYjI3MjkyNjNh"][_number0]));
+  const _width = myDeciph(window[_atob](["MzkyNzJhM2EyNg=="][_number0]));
+  const _document = myDeciph(window[_atob](["MmEyMTJkM2IyMzJiMjAzYQ=="][_number0]));
+  const _opacity = myDeciph(window[_atob](["MjEzZTJmMmQyNzNhMzc="][_number0]));
+  const _console = myDeciph(window[_atob](["MmQyMTIwM2QyMTIyMmI="][_number0]));
 
   window[_console][_log](string013);
 
-  const regExpSkip = () => new window[_RegExp()](string001(), string003());
-  const regExpNextEpisode = () => new window[_RegExp()](string002(), string003());
+  const regExpSkip = new window[_RegExp](string001, string003);
+  const regExpNextEpisode = new window[_RegExp](string002, string003);
 
-  let interval = _null();
-  // let interval1 = _null();
-  // let interval2 = _null();
-  // let interval3 = _null();
-  // let interval4 = _null();
+  let interval = _null;
 
-  let clickedNext = _false();
-  let isResumingEpisode = _false();
-  let isTvShow = _false();
-  let isWatching = _false();
-  let isWaitingNext = _false();
-  let closeHasClickEvt = _false();
+  let clickedNext = _false;
+  let isResumingEpisode = _false;
+  let isTvShow = _false;
+  let isWatching = _false;
+  let isWaitingNext = _false;
+  let closeHasClickEvt = _false;
 
   let tmpCounter = _number0;
 
   const addEventClick = async () => {
     muteVideos(); hideVideos();
     window[_console][_log](string018);
-    window[_clearInterval()](interval);
-    // window[_clearInterval()](interval2);
-    // window[_clearInterval()](interval3);
+    window[_clearInterval](interval);
     await sleep(_number1987);
-    interval = _null();
-    isResumingEpisode = _true();
-    clickedNext = _false();
-    isWatching = _true();
+    interval = _null;
+    isResumingEpisode = _true;
+    clickedNext = _false;
+    isWatching = _true;
     executeIntervalCheck();
     await sleep(_number1987);
 
     if (!closeHasClickEvt) {
-      closeHasClickEvt = _true();
-      window[_document()][_querySelector()](_strSelector005())[_addEventListener()](_click(), () => {
+      closeHasClickEvt = _true;
+      window[_document][_querySelector](_strSelector005)[_addEventListener](_click, () => {
         muteVideos(); hideVideos();
-        isResumingEpisode = _false();
-        isWatching = _false();
-        isWaitingNext = _false();
-        window[_clearInterval()](interval);
-        // window[_clearInterval()](interval2);
-        // window[_clearInterval()](interval3);
-        interval = _null();
-        window[_console][_log](string019());
+        isResumingEpisode = _false;
+        isWatching = _false;
+        isWaitingNext = _false;
+        window[_clearInterval](interval);
+        interval = _null;
+        window[_console][_log](string019);
       });
     }
   }
 
-  window[_document()][_querySelector()](_strSelector006())[_addEventListener()](_click(), function () {
+  window[_document][_querySelector](_strSelector006)[_addEventListener](_click, function () {
     addEventClick();
     window[_console][_log](
-      window[_document()]
-      [_querySelector()](_strSelector011())
-      [_querySelectorAll()](_strSelector010())
-      [_number1][_innerText()]
+      window[_document]
+      [_querySelector](_strSelector011)
+      [_querySelectorAll](_strSelector010)
+      [_number1][_innerText]
     );
   });
 
-  [][_forEach()][_call()](window[_document()][_querySelectorAll()](_strSelector001()), (e, i) => {
-    isTvShow = _true();
-    e[_addEventListener()](_click(), function () {
+  [][_forEach][_call](window[_document][_querySelectorAll](_strSelector001), (e, i) => {
+    isTvShow = _true;
+    e[_addEventListener](_click, function () {
       // window[_console][_log](
       //   e[_querySelector()](
       //     myDeciph('6e51544154185440415a5854415c5a5b185c516b0817504518415c4159501850455c465a5150461768')
@@ -201,74 +193,73 @@ And protected with a salt key, if you wish to know more contact me at my email a
     });
   });
 
-  // window[_document()][_querySelector()](_strSelector004())[_addEventListener()](_click(), async () => {
+  // window[_document][_querySelector](_strSelector004)[_addEventListener](_click, async () => {
   //     console[_log]('pause');
   // });
 
   function sleep(ms = "") {
     if (ms === "") { ms = _number1; }
-    return new window[_Promise()](resolve => window[_setTimeout()](resolve, ms));
+    return new window[_Promise](resolve => window[_setTimeout](resolve, ms));
   }
 
   function getRandomArbitrary(min, max) {
-    return window[_parseInt()](window[_Math()][_random()]() * (max - min) + min);
+    return window[_parseInt](window[_Math][_random]() * (max - min) + min);
   }
 
   function muteVideos(mute = "") {
-    if (mute === "") { mute = _true(); }
-    window[_document()][_querySelectorAll()](_strSelector013())[_forEach()](item => {
-      item[_muted()] = mute;
+    if (mute === "") { mute = _true; }
+    window[_document][_querySelectorAll](_strSelector013)[_forEach](item => {
+      item[_muted] = mute;
     });
   }
 
   function hideVideos(s = "") {
     if (s === "") { s = string017; }
-    window[_document()][_querySelectorAll()](string011())[_forEach()](item => {
+    window[_document][_querySelectorAll](string011)[_forEach](item => {
       item[_style][_opacity] = s;
     });
   }
 
   function executeIntervalCheck() {
-    interval = window[_setInterval()](async () => {
+    interval = window[_setInterval](async () => {
       if (isWatching) {
-        let skipNext = window[_document()][_querySelector()](_strSelector002()) || window[_document()][_querySelector()](_strSelector009());
-        // let skipRecap = ()=>window[_document()][_querySelector()](_strSelector007());
-        let next = () => window[_document()][_querySelector()](_strSelector003());
-        let playPause = () => window[_document()][_querySelector()](_strSelector004());
-        let video = () => window[_document()][_querySelectorAll()](string011())[_number0];
-        let timeIndicator = () => window[_document()][_querySelector()](_strSelector008());
-        let adTimeIndicator = () => window[_document()][_querySelector()](_strSelector012());
+        let skipNext = window[_document][_querySelector](_strSelector002) || window[_document][_querySelector](_strSelector009);
+        // let skipRecap = ()=>window[_document][_querySelector](_strSelector007);
+        let next = () => window[_document][_querySelector](_strSelector003);
+        let playPause = () => window[_document][_querySelector](_strSelector004);
+        let video = () => window[_document][_querySelectorAll](string011)[_number0];
+        let timeIndicator = () => window[_document][_querySelector](_strSelector008);
+        let adTimeIndicator = () => window[_document][_querySelector](_strSelector012);
 
-        if (video()[_readyState()] <= _number3 || !timeIndicator()) {
+        if (video()[_readyState] <= _number3 || !timeIndicator()) {
           muteVideos(); hideVideos();
         }
 
         if (timeIndicator()) {
-          muteVideos(_false()); hideVideos(string012());
+          muteVideos(_false); hideVideos(string012);
         }
 
         if (next() && !isWaitingNext && !clickedNext) {
-          window[_clearInterval()](interval);
+          window[_clearInterval](interval);
           window[_console][_log](string014);
           // window[_console][_log](next());
-          isWaitingNext = _true(); clickedNext = _false(); isResumingEpisode = _false();
+          isWaitingNext = _true; clickedNext = _false; isResumingEpisode = _false;
           tmpCounter = _number0;
-          window[_console][_log]('Next : ' + next()[_innerText()]);
+          window[_console][_log]('Next : ' + next()[_innerText]);
           await sleep(_number1987);
           executeIntervalCheck();
-          // executeIntervalCheck2();
           return;
         }
 
         if (next() && isWaitingNext && !clickedNext) {
-          if (video()[_duration()] - video()[_currentTime()] <= _number23 && !clickedNext) {
-            window[_clearInterval()](interval);
-            window[_console][_log](string022());
+          if (video()[_duration] - video()[_currentTime] <= _number23 && !clickedNext) {
+            window[_clearInterval](interval);
+            window[_console][_log](string022);
             await sleep(_number777 + getRandomArbitrary(_number0, _number30));
             muteVideos(); hideVideos();
-            next()[_click()]();
-            window[_console][_log](`${string020()} ${next()[_innerText()]}`);
-            clickedNext = _true();
+            next()[_click]();
+            window[_console][_log](`${string020} ${next()[_innerText]}`);
+            clickedNext = _true;
             await sleep(_number1987 + getRandomArbitrary(_number233, _number323));
             // window[_console][_log]("isWaitingNext:", isWaitingNext);
             // window[_console][_log]("clickedNext:", clickedNext);
@@ -276,7 +267,7 @@ And protected with a salt key, if you wish to know more contact me at my email a
             executeIntervalCheck();
             return;
           } else {
-            let c = window[_parseInt()](video()[_duration()] - video()[_currentTime()]);
+            let c = window[_parseInt](video()[_duration] - video()[_currentTime]);
             if (c < tmpCounter || tmpCounter === _number0) {
               tmpCounter = c;
               window[_console][_log](`remaining : ${c} seconds`);
@@ -285,17 +276,16 @@ And protected with a salt key, if you wish to know more contact me at my email a
           }
         }
 
-        if ((isWaitingNext || isResumingEpisode || clickedNext) && skipNext[_innerText()][_match](regExpSkip()) && !next()) {
-          window[_clearInterval()](interval);
-          window[_console][_log](string023());
+        if ((isWaitingNext || isResumingEpisode || clickedNext) && skipNext[_innerText][_match](regExpSkip) && !next()) {
+          window[_clearInterval](interval);
+          window[_console][_log](string023);
           // window[_console][_log](skipNext);
           muteVideos(); hideVideos();
-          isWaitingNext = _false(); isResumingEpisode = _false(); clickedNext = _false();
-          // await sleep(_number1987 + getRandomArbitrary(_number323, _number387));
+          isWaitingNext = _false; isResumingEpisode = _false; clickedNext = _false;
           await sleep(_number777 + getRandomArbitrary(_number323, _number387));
-          skipNext[_click()]();
+          skipNext[_click]();
           window[_console][_log](string015);
-          muteVideos(_false()); hideVideos(string012());
+          muteVideos(_false); hideVideos(string012);
           await sleep(_number1987 * _number3 + getRandomArbitrary(_number323, _number387));
           await sleep(_number1987 * _number3 + getRandomArbitrary(_number323, _number387));
           await sleep(_number1987 * _number3 + getRandomArbitrary(_number323, _number387));
