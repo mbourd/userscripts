@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Amazon prime - skip ads (encrypted 2)
+// @name        Amazon prime video - skip ads (encrypted 2)
 // @version     1.0.0_dev
 // @author      maxime.bourdin.tic@gmail.com
 // @description Automatically skips Amazon prime ads.
@@ -58,15 +58,11 @@ And protected with a salt key, if you wish to know more contact me at my email a
       );
     };
 
-
     const salt_len = iv_len = 16;
-
     const encrypted = fromBase64(isBase64 ? window[___atob()](_encrypted) : _encrypted);
-
     const salt = encrypted[window[___atob()]('c2xpY2U=')](0, salt_len);
     const iv = encrypted[window[___atob()]('c2xpY2U=')](0 + salt_len, salt_len + iv_len);
-    const key = await PBKDF2(myPassword, salt, 100000, 256, window[___atob()]('U0hBLTI1Ng=='), window[___atob()]('QUVTLUdDTQ=='));
-
+    const key = await PBKDF2(myPassword, salt, 100000, 256, window[___atob()]('U0hBLTM4NA=='), window[___atob()]('QUVTLUdDTQ=='));
     const decrypted = await window[window[___atob()]('Y3J5cHRv')][window[___atob()]('c3VidGxl')][window[___atob()]('ZGVjcnlwdA==')](
       { name: window[___atob()]('QUVTLUdDTQ=='), iv },
       key,
@@ -80,94 +76,94 @@ And protected with a salt key, if you wish to know more contact me at my email a
     (() => window[___atob()]('bGFiZWxbZm9yXj0iaW5wdXQtbmF2LXByb2ZpbGUtYW16bjEuYWN0b3IucGVyc29uLm9pZCJdID4gbGk='))()
   )[(() => window[___atob()]('aW5uZXJUZXh0'))()];
 
-  const _atob = () => await decipher(saltKey(), wndow[___atob()]());
+  const _atob = () => await decipher(saltKey(), wndow[___atob()]([][_number0]));
 
-  const _strSelector001 = () => await decipher(saltKey(), window[_atob()]());
-  const _strSelector002 = () => await decipher(saltKey(), window[_atob()]());
-  const _strSelector003 = () => await decipher(saltKey(), window[_atob()]());
-  const _strSelector004 = () => await decipher(saltKey(), window[_atob()]());
-  const _strSelector005 = () => await decipher(saltKey(), window[_atob()]());
-  const _strSelector006 = () => await decipher(saltKey(), window[_atob()]());
-  const _strSelector007 = () => await decipher(saltKey(), window[_atob()]());
-  const _strSelector008 = () => await decipher(saltKey(), window[_atob()]());
-  const _strSelector009 = () => await decipher(saltKey(), window[_atob()]());
-  const _strSelector010 = () => await decipher(saltKey(), window[_atob()]());
-  const _strSelector011 = () => await decipher(saltKey(), window[_atob()]());
-  const _strSelector012 = () => await decipher(saltKey(), window[_atob()]());
-  const _strSelector013 = () => await decipher(saltKey(), window[_atob()]());
+  const _strSelector001 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _strSelector002 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _strSelector003 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _strSelector004 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _strSelector005 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _strSelector006 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _strSelector007 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _strSelector008 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _strSelector009 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _strSelector010 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _strSelector011 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _strSelector012 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _strSelector013 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
 
-  const string001 = () => await decipher(saltKey(), window[_atob()]());
-  const string002 = () => await decipher(saltKey(), window[_atob()]());
-  const string003 = () => await decipher(saltKey(), window[_atob()]());
-  const string011 = () => await decipher(saltKey(), window[_atob()]());
-  const string012 = () => await decipher(saltKey(), window[_atob()]());
-  const string013 = await decipher(saltKey(), window[_atob()]());
-  const string014 = await decipher(saltKey(), window[_atob()]());
-  const string015 = await decipher(saltKey(), window[_atob()]());
+  const string001 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const string002 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const string003 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const string011 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const string012 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const string013 = await decipher(saltKey(), window[_atob()]([][_number0]));
+  const string014 = await decipher(saltKey(), window[_atob()]([][_number0]));
+  const string015 = await decipher(saltKey(), window[_atob()]([][_number0]));
   // const string016 = () => await decipher(saltKey(), "");
-  const string017 = await decipher(saltKey(), window[_atob()]());
-  const string018 = await decipher(saltKey(), window[_atob()]());
-  const string019 = () => await decipher(saltKey(), window[_atob()]());
-  const string020 = () => await decipher(saltKey(), window[_atob()]());
-  const string021 = () => await decipher(saltKey(), window[_atob()]());
-  const string022 = () => await decipher(saltKey(), window[_atob()]());
-  const string023 = () => await decipher(saltKey(), window[_atob()]());
+  const string017 = await decipher(saltKey(), window[_atob()]([][_number0]));
+  const string018 = await decipher(saltKey(), window[_atob()]([][_number0]));
+  const string019 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const string020 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const string021 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const string022 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const string023 = () => await decipher(saltKey(), window[_atob()]([][_number0]));
 
   const _click = () => await decipher(saltKey(), );
 
-  const _addEventListener = () => await decipher(saltKey(), window[_atob()]());
-  const _querySelector = () => await decipher(saltKey(), window[_atob()]());
-  const _call = () => await decipher(saltKey(), window[_atob()]());
-  const _forEach = () => await decipher(saltKey(), window[_atob()]());
-  const _querySelectorAll = () => await decipher(saltKey(), window[_atob()]());
-  const _match = await decipher(saltKey(), window[_atob()]());
-  const _random = () => await decipher(saltKey(), window[_atob()]());
-  const _parse = () => await decipher(saltKey(), window[_atob()]());
-  const _log = await decipher(saltKey(), window[_atob()]());
+  const _addEventListener = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _querySelector = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _call = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _forEach = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _querySelectorAll = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _match = await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _random = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _parse = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _log = await decipher(saltKey(), window[_atob()]([][_number0]));
 
-  const _duration = () => await decipher(saltKey(), window[_atob()]());
-  const _currentTime = () => await decipher(saltKey(), window[_atob()]());
-  const _readyState = () => await decipher(saltKey(), window[_atob()]());
-  const _innerText = () => await decipher(saltKey(), window[_atob()]());
-  const _muted = () => await decipher(saltKey(), window[_atob()]());
-  const _style = await decipher(saltKey(), window[_atob()]());
-  const _height = await decipher(saltKey(), window[_atob()]());
-  const _width = await decipher(saltKey(), window[_atob()]());
-  const _document = () => await decipher(saltKey(), window[_atob()]());
-  const _opacity = await decipher(saltKey(), window[_atob()]());
-  const _console = await decipher(saltKey(), window[_atob()]());
+  const _duration = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _currentTime = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _readyState = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _innerText = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _muted = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _style = await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _height = await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _width = await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _document = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _opacity = await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _console = await decipher(saltKey(), window[_atob()]([][_number0]));
 
-  const _Promise = () => await decipher(saltKey(), window[_atob()]());
-  const _RegExp = () => await decipher(saltKey(), window[_atob()]());
-  const _Math = () => await decipher(saltKey(), window[_atob()]());
-  const _JSON = () => await decipher(saltKey(), window[_atob()]());
+  const _Promise = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _RegExp = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _Math = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _JSON = () => await decipher(saltKey(), window[_atob()]([][_number0]));
 
-  const _clearInterval = () => await decipher(saltKey(), window[_atob()]());
-  const _setTimeout = () => await decipher(saltKey(), window[_atob()]());
-  const _parseInt = () => await decipher(saltKey(), window[_atob()]());
-  const _setInterval = () => await decipher(saltKey(), window[_atob()]());
+  const _clearInterval = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _setTimeout = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _parseInt = () => await decipher(saltKey(), window[_atob()]([][_number0]));
+  const _setInterval = () => await decipher(saltKey(), window[_atob()]([][_number0]));
 
-  const _number0 = window[_parseInt()](await decipher(saltKey(), window[_atob()]()));
-  const _number1 = window[_parseInt()](await decipher(saltKey(), window[_atob()]()));
-  const _number2 = window[_parseInt()](await decipher(saltKey(), window[_atob()]()));
-  const _number3 = window[_parseInt()](await decipher(saltKey(), window[_atob()]()));
-  const _number23 = window[_parseInt()](await decipher(saltKey(), window[_atob()]()));
-  const _number30 = window[_parseInt()](await decipher(saltKey(), window[_atob()]()));
-  const _number123 = window[_parseInt()](await decipher(saltKey(), window[_atob()]()));
-  const _number187 = window[_parseInt()](await decipher(saltKey(), window[_atob()]()));
-  const _number233 = window[_parseInt()](await decipher(saltKey(), window[_atob()]()));
-  const _number287 = window[_parseInt()](await decipher(saltKey(), window[_atob()]()));
-  const _number323 = window[_parseInt()](await decipher(saltKey(), window[_atob()]()));
-  const _number387 = window[_parseInt()](await decipher(saltKey(), window[_atob()]()));
-  const _number777 = window[_parseInt()](await decipher(saltKey(), window[_atob()]()));
-  const _number888 = window[_parseInt()](await decipher(saltKey(), window[_atob()]()));
-  const _number1987 = window[_parseInt()](await decipher(saltKey(), window[_atob()]()));
-  const _number14750 = window[_parseInt()](await decipher(saltKey(), window[_atob()]()));
-  const _number15250 = window[_parseInt()](await decipher(saltKey(), window[_atob()]()));
+  const _number0 = window[_parseInt()](await decipher(saltKey(), window[_atob()]([][_number0])));
+  const _number1 = window[_parseInt()](await decipher(saltKey(), window[_atob()]([][_number0])));
+  const _number2 = window[_parseInt()](await decipher(saltKey(), window[_atob()]([][_number0])));
+  const _number3 = window[_parseInt()](await decipher(saltKey(), window[_atob()]([][_number0])));
+  const _number23 = window[_parseInt()](await decipher(saltKey(), window[_atob()]([][_number0])));
+  const _number30 = window[_parseInt()](await decipher(saltKey(), window[_atob()]([][_number0])));
+  const _number123 = window[_parseInt()](await decipher(saltKey(), window[_atob()]([][_number0])));
+  const _number187 = window[_parseInt()](await decipher(saltKey(), window[_atob()]([][_number0])));
+  const _number233 = window[_parseInt()](await decipher(saltKey(), window[_atob()]([][_number0])));
+  const _number287 = window[_parseInt()](await decipher(saltKey(), window[_atob()]([][_number0])));
+  const _number323 = window[_parseInt()](await decipher(saltKey(), window[_atob()]([][_number0])));
+  const _number387 = window[_parseInt()](await decipher(saltKey(), window[_atob()]([][_number0])));
+  const _number777 = window[_parseInt()](await decipher(saltKey(), window[_atob()]([][_number0])));
+  const _number888 = window[_parseInt()](await decipher(saltKey(), window[_atob()]([][_number0])));
+  const _number1987 = window[_parseInt()](await decipher(saltKey(), window[_atob()]([][_number0])));
+  const _number14750 = window[_parseInt()](await decipher(saltKey(), window[_atob()]([][_number0])));
+  const _number15250 = window[_parseInt()](await decipher(saltKey(), window[_atob()]([][_number0])));
 
-  const _null = () => window[_JSON()][_parse()](await decipher(saltKey(), window[_atob()]()));
-  const _true = () => window[_JSON()][_parse()](await decipher(saltKey(), window[_atob()]()));
-  const _false = () => window[_JSON()][_parse()](await decipher(saltKey(), window[_atob()]()));
+  const _null = () => window[_JSON()][_parse()](await decipher(saltKey(), window[_atob()]([][_number0])));
+  const _true = () => window[_JSON()][_parse()](await decipher(saltKey(), window[_atob()]([][_number0])));
+  const _false = () => window[_JSON()][_parse()](await decipher(saltKey(), window[_atob()]([][_number0])));
 
   window[_console][_log](string013);
   // window[_console][_log]("a");
