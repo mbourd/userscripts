@@ -113,6 +113,7 @@ And protected with a salt key, if you wish to know more contact me at my email a
   const string021 = await decipher(saltKey(), window[_atob](["STdxQ0FSTXJDNTZSNENJMy9OQmtTV1lyYnRheHllWUlIbHpIUDNYYk1ydFlFbjdGa1BiMEVpdTVxTVczWkU4K29BUjRmd0lUR1ZacnpBPT0="][_number0]));
   const string022 = await decipher(saltKey(), window[_atob](["VENFWGNFNCtJU1J4a3MyaElKc2ZiRFQvZkJBdUNZRWEveUhET016Q3FSTzRRTFhMK2drTEtLMFlrZmd3Y3RiRnh3ZVZ1YzdOMXdxY09oTVJCRzUwa1E9PQ=="][_number0]));
   const string023 = await decipher(saltKey(), window[_atob](["cWFSbjNUbUYvdFdadEQ5eFhaRVc0K2QybHRCQk5MbzROaXJJQ0RsVGU5SkduTk1hTWZ3Nnh0YXEwRDlMWWxOQ0Y3aFlvRSthckJLdThBPT0="][_number0]));
+  const string024 = await decipher(saltKey(), window[_atob](["eE9wNk5ldXAveThpWUhOd014S3JiV0V6eHVnQjJxSndPam9zTXV1b2hYL0U4WHhtQTE5UUZ6Vm1XWHRxSDhTTW5XWjhScVEveFRaL2w5MD0="][_number0]));
 
   const _click = await decipher(saltKey(), window[_atob](["UHRobTlTWnVqZEQ5OWgyV1p5cWFBbVJvOVpYRGxyT3RYS1N3bThRWWZydGE1RitSZGMyZ000T2RyWDFBcEVCSU9GaENhQ0k9"][_number0]));
 
@@ -169,7 +170,7 @@ And protected with a salt key, if you wish to know more contact me at my email a
   const _false = window[_JSON][_parse](await decipher(saltKey(), window[_atob](["a3Y1VURjR2tzVmxoUmVCaGZvVDRpQ29JK29XemFkbmxCRmluL3F4UVBFSHFpemNnVS9lK3U1R0Rwekh2elNPeEJGdUxsSmM9"][_number0])));
 
 
-  window['console']['log']('decrypted...');
+  window[_console][_log](string024);
 
   const regExpSkip = new window[_RegExp](string001, string003);
   const regExpNextEpisode = new window[_RegExp](string002, string003);
