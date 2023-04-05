@@ -370,6 +370,17 @@ And protected with a salt key, if you wish to know more contact me at my email a
           muteVideos(_false); hideVideos(string012);
         }
 
+        if (isResumingEpisode && video()[_currentTime] >= _number123) {
+          window[_clearInterval](interval);
+          isWaitingNext = _false; isResumingEpisode = _false; clickedNext = _false;
+          executeIntervalCheck();
+        }
+
+        if (!next() && video()[_duration] - video()[_currentTime] <= 16) {
+          window[_clearInterval](interval);
+          return;
+        }
+
         if (next() && !isWaitingNext && !clickedNext) {
           window[_clearInterval](interval);
           window[_console][_log](string014);
@@ -387,8 +398,10 @@ And protected with a salt key, if you wish to know more contact me at my email a
           if (video()[_duration] - video()[_currentTime] <= _number23 && !clickedNext) {
             window[_clearInterval](interval);
             window[_console][_log](string022);
-            await sleep(_number777 + getRandomArbitrary(_number0, _number30));
+            await sleep(_number777 + getRandomArbitrary(_number0, _number30) - _number23);
             muteVideos(); hideVideos();
+            next().focus();
+            await sleep(_number23);
             next()[_click]();
             window[_console][_log](`${string020} ${next()[_innerText]}`);
             clickedNext = _true;
@@ -417,7 +430,9 @@ And protected with a salt key, if you wish to know more contact me at my email a
           isWaitingNext = _false; isResumingEpisode = _false; clickedNext = _false;
           await sleep(_number1987 + getRandomArbitrary(_number323, _number387));
           // await sleep(_number777);
-          await sleep(_number777 + getRandomArbitrary(_number187, _number387));
+          await sleep(_number777 + getRandomArbitrary(_number187, _number387) - _number23);
+          skipNext.focus();
+          await sleep(_number23);
           skipNext[_click]();
           window[_console][_log](string015);
           muteVideos(_false); hideVideos(string012);
