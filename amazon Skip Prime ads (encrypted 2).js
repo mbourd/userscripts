@@ -173,6 +173,33 @@ And protected with a salt key, if you wish to know more contact me at my email a
   const _parseInt = await decipher(saltKey(), window[_atob]([encryptedStrings._parseInt][0]));
   const _number0 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number0][0])));
 
+  const _clearInterval = await decipher(saltKey(), window[_atob]([encryptedStrings._clearInterval][_number0]));
+  const _setTimeout = await decipher(saltKey(), window[_atob]([encryptedStrings._setTimeout][_number0]));
+  const _setInterval = await decipher(saltKey(), window[_atob]([encryptedStrings._setInterval][_number0]));
+
+  const _number1 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number1][_number0])));
+  const _number2 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number2][_number0])));
+  const _number3 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number3][_number0])));
+  const _number23 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number23][_number0])));
+  const _number30 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number30][_number0])));
+  const _number123 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number123][_number0])));
+  const _number187 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number187][_number0])));
+  const _number233 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number233][_number0])));
+  const _number287 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number287][_number0])));
+  const _number323 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number323][_number0])));
+  const _number387 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number387][_number0])));
+  const _number666 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number666][_number0])));
+  const _number777 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number777][_number0])));
+  const _number888 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number888][_number0])));
+  const _number1987 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number1987][_number0])));
+  const _number14750 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number14750][_number0])));
+  const _number15250 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number15250][_number0])));
+
+  const _Promise = await decipher(saltKey(), window[_atob]([encryptedStrings._Promise][_number0]));
+  const _RegExp = await decipher(saltKey(), window[_atob]([encryptedStrings._RegExp][_number0]));
+  const _Math = await decipher(saltKey(), window[_atob]([encryptedStrings._Math][_number0]));
+  const _JSON = await decipher(saltKey(), window[_atob]([encryptedStrings._JSON][_number0]));
+
   const _strSelector001 = await decipher(saltKey(), window[_atob]([encryptedStrings._strSelector001][_number0]));
   const _strSelector002 = await decipher(saltKey(), window[_atob]([encryptedStrings._strSelector002][_number0]));
   const _strSelector003 = await decipher(saltKey(), window[_atob]([encryptedStrings._strSelector003][_number0]));
@@ -228,33 +255,6 @@ And protected with a salt key, if you wish to know more contact me at my email a
   const _document = await decipher(saltKey(), window[_atob]([encryptedStrings._document][_number0]));
   const _opacity = await decipher(saltKey(), window[_atob]([encryptedStrings._opacity][_number0]));
   const _console = await decipher(saltKey(), window[_atob]([encryptedStrings._console][_number0]));
-
-  const _Promise = await decipher(saltKey(), window[_atob]([encryptedStrings._Promise][_number0]));
-  const _RegExp = await decipher(saltKey(), window[_atob]([encryptedStrings._RegExp][_number0]));
-  const _Math = await decipher(saltKey(), window[_atob]([encryptedStrings._Math][_number0]));
-  const _JSON = await decipher(saltKey(), window[_atob]([encryptedStrings._JSON][_number0]));
-
-  const _clearInterval = await decipher(saltKey(), window[_atob]([encryptedStrings._clearInterval][_number0]));
-  const _setTimeout = await decipher(saltKey(), window[_atob]([encryptedStrings._setTimeout][_number0]));
-  const _setInterval = await decipher(saltKey(), window[_atob]([encryptedStrings._setInterval][_number0]));
-
-  const _number1 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number1][_number0])));
-  const _number2 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number2][_number0])));
-  const _number3 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number3][_number0])));
-  const _number23 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number23][_number0])));
-  const _number30 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number30][_number0])));
-  const _number123 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number123][_number0])));
-  const _number187 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number187][_number0])));
-  const _number233 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number233][_number0])));
-  const _number287 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number287][_number0])));
-  const _number323 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number323][_number0])));
-  const _number387 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number387][_number0])));
-  const _number666 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number666][_number0])));
-  const _number777 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number777][_number0])));
-  const _number888 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number888][_number0])));
-  const _number1987 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number1987][_number0])));
-  const _number14750 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number14750][_number0])));
-  const _number15250 = window[_parseInt](await decipher(saltKey(), window[_atob]([encryptedStrings._number15250][_number0])));
 
   const _null = window[_JSON][_parse](await decipher(saltKey(), window[_atob]([encryptedStrings._null][_number0])));
   const _true = window[_JSON][_parse](await decipher(saltKey(), window[_atob]([encryptedStrings._true][_number0])));
@@ -370,7 +370,7 @@ And protected with a salt key, if you wish to know more contact me at my email a
           muteVideos(_false); hideVideos(string012);
         }
 
-        if (isResumingEpisode && video()[_currentTime] >= _number123) {
+        if (!next() && video()[_currentTime] >= _number123) {
           window[_clearInterval](interval);
           isWaitingNext = _false; isResumingEpisode = _false; clickedNext = _false;
           executeIntervalCheck();

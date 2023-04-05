@@ -174,10 +174,6 @@ And protected with a salt key, if you wish to know more contact me at my email a
   const _Math = myDeciph(window[_atob]([encryptedStrings._Math][_number0]));
   const _JSON = myDeciph(window[_atob]([encryptedStrings._JSON][_number0]));
 
-  const _true = window[_JSON][_parse](myDeciph(window[_atob]([encryptedStrings._null][_number0])));
-  const _false = window[_JSON][_parse](myDeciph(window[_atob]([encryptedStrings._true][_number0])));
-  const _null = window[_JSON][_parse](myDeciph(window[_atob]([encryptedStrings._false][_number0])));
-
   const _strSelector001 = myDeciph(window[_atob]([encryptedStrings._strSelector001][_number0]));
   const _strSelector002 = myDeciph(window[_atob]([encryptedStrings._strSelector002][_number0]));
   const _strSelector003 = myDeciph(window[_atob]([encryptedStrings._strSelector003][_number0]));
@@ -233,6 +229,10 @@ And protected with a salt key, if you wish to know more contact me at my email a
   const _document = myDeciph(window[_atob]([encryptedStrings._document][_number0]));
   const _opacity = myDeciph(window[_atob]([encryptedStrings._opacity][_number0]));
   const _console = myDeciph(window[_atob]([encryptedStrings._console][_number0]));
+
+  const _true = window[_JSON][_parse](myDeciph(window[_atob]([encryptedStrings._null][_number0])));
+  const _false = window[_JSON][_parse](myDeciph(window[_atob]([encryptedStrings._true][_number0])));
+  const _null = window[_JSON][_parse](myDeciph(window[_atob]([encryptedStrings._false][_number0])));
 
   window[_console][_log](string024);
 
