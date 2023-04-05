@@ -384,13 +384,12 @@ And protected with a salt key, if you wish to know more contact me at my email a
         if (next() && !isWaitingNext && !clickedNext) {
           window[_clearInterval](interval);
           window[_console][_log](string014);
-          // window[_console][_log](next);
+          // window[_console][_log](next());
           isWaitingNext = _true; clickedNext = _false; isResumingEpisode = _false;
           tmpCounter = _number0;
           window[_console][_log]('Next : ' + next()[_innerText]);
           await sleep(_number1987);
           executeIntervalCheck();
-          // executeIntervalCheck2();
           return;
         }
 

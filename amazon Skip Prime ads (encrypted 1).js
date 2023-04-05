@@ -344,9 +344,9 @@ And protected with a salt key, if you wish to know more contact me at my email a
           muteVideos(_false); hideVideos(string012);
         }
 
-        if (isResumingEpisode && video()[_currentTime] >= _number123) {
+        if (!next() && video()[_currentTime] >= _number123) {
           window[_clearInterval](interval);
-          isResumingEpisode = _false();
+          isWaitingNext = _false; isResumingEpisode = _false; clickedNext = _false;
           executeIntervalCheck();
         }
 
