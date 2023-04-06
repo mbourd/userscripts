@@ -18,7 +18,7 @@ More code more efficient is the obfuscation
 (check the last line of the file to see the obfuscated code)
 
 !! WARNING !!
-This script is not usable on your side, because at line 196 all strings are now encrypted with AES-GCM.
+This script is not usable on your side, because at line 199 all strings are now encrypted with AES-GCM.
 The cipher is not implemented because, the encrypted strings are hard coded.
 The decipher is partialy implemented but not usable on your side, because you need to know the methods.
 The strings are protected with a salt key, if you wish to know more contact me at my email address.
