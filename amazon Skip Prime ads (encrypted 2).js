@@ -46,57 +46,60 @@ const webCryptoApi_ = JSON.parse(localStorage.getItem('cryptoWebApi'));
 //Develop here then obfuscate
 (async function () {
   const ___atob = () => 'atob';
+  const _propNameSalt = () => 'salt'; const _propNameIV = () => 'iv';
+  const _propNameIterations = () => 'iterations'; const _propNameHash = () => 'hash';
+  const _propNameName = () => 'name'; const _propNameLength = () => 'length';
 
-  async function decipher(myPassword) {
+  async function decipher(myPassword, iterations = webCryptoApi_.cryptoAPI015, hash = webCryptoApi_.cryptoAPI006, algo = webCryptoApi_.cryptoAPI007) {
     return async (_encrypted) => {
-      const encoder = new window[webCryptoApi_.m001]();
-      const decoder = new window[webCryptoApi_.m002]();
+      const encoder = new window[webCryptoApi_.cryptoAPI017]();
+      const decoder = new window[webCryptoApi_.cryptoAPI018]();
 
       const fromBase64 = buffer =>
-        window[webCryptoApi_.m003][webCryptoApi_.m013](window[webCryptoApi_.m004](buffer), c => c[webCryptoApi_.m005](webCryptoApi_.v009));
+        window[webCryptoApi_.cryptoAPI019][webCryptoApi_.cryptoAPI020](window[webCryptoApi_.cryptoAPI021](buffer), c => c[webCryptoApi_.cryptoAPI022](webCryptoApi_.cryptoAPI029));
 
       const PBKDF2 = async (
-        password, salt, iterations, length, hash = webCryptoApi_.str001, algorithm = webCryptoApi_.str002
+        password, salt, iterations, length, hash = webCryptoApi_.cryptoAPI001, algorithm = webCryptoApi_.cryptoAPI002
       ) => {
-        const keyMaterial = await window[webCryptoApi_.m006][webCryptoApi_.m007][webCryptoApi_.m008](
-          webCryptoApi_.str003,
-          encoder[webCryptoApi_.m009](password),
-          webCryptoApi_.v005,
-          webCryptoApi_.v002,
-          webCryptoApi_.v004
+        const keyMaterial = await window[webCryptoApi_.cryptoAPI023][webCryptoApi_.cryptoAPI024][webCryptoApi_.cryptoAPI025](
+          webCryptoApi_.cryptoAPI003,
+          encoder[webCryptoApi_.cryptoAPI027](password),
+          webCryptoApi_.cryptoAPI013,
+          webCryptoApi_.cryptoAPI010,
+          webCryptoApi_.cryptoAPI012
         );
-        return await window[webCryptoApi_.m006][webCryptoApi_.m007][webCryptoApi_.m010](
+        return await window[webCryptoApi_.cryptoAPI023][webCryptoApi_.cryptoAPI024][webCryptoApi_.cryptoAPI004](
           {
-            name: webCryptoApi_.str005,
-            salt: encoder[webCryptoApi_.m009](salt),
-            iterations,
-            hash
+            [(() => _propNameName())()]: webCryptoApi_.cryptoAPI005,
+            [(() => _propNameSalt())()]: encoder[webCryptoApi_.cryptoAPI027](salt),
+            [(() => _propNameIterations())()]: iterations,
+            [(() => _propNameHash())()]: hash
           },
           keyMaterial,
-          { name: algorithm, length },
-          webCryptoApi_.v002,
-          webCryptoApi_.v003
+          { [(() => _propNameName())()]: algorithm, [(() => _propNameLength())()]: length },
+          webCryptoApi_.cryptoAPI010,
+          webCryptoApi_.cryptoAPI011
         );
       };
 
-      const salt_len = webCryptoApi_.v006;
-      const iv_len = webCryptoApi_.v006;
+      const salt_len = webCryptoApi_.cryptoAPI014;
+      const iv_len = webCryptoApi_.cryptoAPI014;
       const encrypted = fromBase64(_encrypted);
-      const salt = encrypted[webCryptoApi_.m011](webCryptoApi_.v009, salt_len);
-      const iv = encrypted[webCryptoApi_.m011](webCryptoApi_.v009 + salt_len, salt_len + iv_len);
-      const key = await PBKDF2(myPassword, salt, webCryptoApi_.v007, webCryptoApi_.v008, webCryptoApi_.str007, webCryptoApi_.str008);
+      const salt = encrypted[webCryptoApi_.cryptoAPI028](webCryptoApi_.cryptoAPI029, salt_len);
+      const iv = encrypted[webCryptoApi_.cryptoAPI028](webCryptoApi_.cryptoAPI029 + salt_len, salt_len + iv_len);
+      const key = await PBKDF2(myPassword, salt, iterations, webCryptoApi_.cryptoAPI016, hash, algo);
 
-      const decrypted = await window[webCryptoApi_.m006][webCryptoApi_.m007][webCryptoApi_.m012](
-        { name: webCryptoApi_.str008, iv },
+      const decrypted = await window[webCryptoApi_.cryptoAPI023][webCryptoApi_.cryptoAPI024][webCryptoApi_.cryptoAPI026](
+        { [(() => _propNameName())()]: webCryptoApi_.cryptoAPI007, [(() => _propNameIV())()]: iv },
         key,
-        encrypted[webCryptoApi_.m011](salt_len + iv_len)
+        encrypted[webCryptoApi_.cryptoAPI028](salt_len + iv_len)
       );
-      return decoder[webCryptoApi_.str009](decrypted);
+      return decoder[webCryptoApi_.cryptoAPI008](decrypted);
     }
   }
 
   const saltKey = () => window[(() => window[___atob()]('ZG9jdW1lbnQ='))()][(() => window[___atob()]('cXVlcnlTZWxlY3Rvcg=='))()](
-    (() => JSON.parse(localStorage.getItem('userscript')).saltKeySelector)()
+    (() => JSON.parse(localStorage.getItem('userscript'))[(() => 'saltKeySelector')()])()
   )[(() => window[___atob()]('aW5uZXJUZXh0'))()];
 
   const encryptedStrings = {
