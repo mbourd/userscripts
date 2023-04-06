@@ -28,8 +28,8 @@ And protected with a salt key, if you wish to know more contact me at my email a
 (() => {
   const ___atob = () => ['atob'][0];
 
-  const decipher = (salt, pin = 0) => {
-    return encoded => {
+  const decipher = async (salt, pin = 0) => {
+    return async (encoded) => {
       return window[___atob()](encoded)
       [window[___atob()](['bWF0Y2g='][0])](new window[window[___atob()](['UmVnRXhw'][0])](window[___atob()](['LnsxLDJ9'][0]), window[___atob()](['Zw=='][0])))
       [window[___atob()](['bWFw'][0])](v => window[window[___atob()](['cGFyc2VJbnQ='][0])](v, window[window[___atob()]('cGFyc2VJbnQ=')](atob(["MTY="][0]))))
@@ -49,7 +49,7 @@ And protected with a salt key, if you wish to know more contact me at my email a
   const pin = () => window[(() => window[___atob()]('ZG9jdW1lbnQ='))()][(() => window[___atob()]('cXVlcnlTZWxlY3RvckFsbA=='))()](
     (() => window[___atob()]('bGFiZWxbZm9yXj0iaW5wdXQtbmF2LXByb2ZpbGUtYW16bjEuYWN0b3IucGVyc29uLm9pZCJdID4gbGk='))()
   )[window[window[___atob()]('cGFyc2VJbnQ=')]((() => 1)())][(() => window[___atob()](['aW5uZXJUZXh0'][0]))()];
-  const myDeciph = decipher(saltKey(), pin());
+  const myDeciph = await decipher(saltKey(), pin());
 
   window[window[___atob()]('Y29uc29sZQ==')][window[___atob()]('bG9n')](window[___atob()]('ZGVjcnlwdGluZy4uLg=='));
 
@@ -142,97 +142,96 @@ And protected with a salt key, if you wish to know more contact me at my email a
     "_false": "TVdReFlURmtNV1F4WkRSaU1XTXhaakZrTVRrPQ==",
     "_null": "TVdReE1qRmpNVGt4WkRSaU1XUTBZZz09"
   };
+  const _atob = await myDeciph(window[___atob()]([encryptedStrings._atob][0]));
+  const _parseInt = await myDeciph(window[_atob]([encryptedStrings._parseInt][0]));
+  const _number0 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number0][0])));
 
-  const _atob = myDeciph(window[___atob()]([encryptedStrings._atob][0]));
-  const _parseInt = myDeciph(window[_atob]([encryptedStrings._parseInt][0]));
-  const _number0 = window[_parseInt](myDeciph(window[_atob]([encryptedStrings._number0][0])));
+  const _clearInterval = await myDeciph(window[_atob]([encryptedStrings._clearInterval][_number0]));
+  const _setTimeout = await myDeciph(window[_atob]([encryptedStrings._setTimeout][_number0]));
+  const _setInterval = await myDeciph(window[_atob]([encryptedStrings._setInterval][_number0]));
 
-  const _clearInterval = myDeciph(window[_atob]([encryptedStrings._clearInterval][_number0]));
-  const _setTimeout = myDeciph(window[_atob]([encryptedStrings._setTimeout][_number0]));
-  const _setInterval = myDeciph(window[_atob]([encryptedStrings._setInterval][_number0]));
+  const _number1 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number1][_number0])));
+  const _number2 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number2][_number0])));
+  const _number3 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number3][_number0])));
+  const _number23 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number23][_number0])));
+  const _number30 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number30][_number0])));
+  const _number123 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number123][_number0])));
+  const _number187 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number187][_number0])));
+  const _number233 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number233][_number0])));
+  const _number287 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number287][_number0])));
+  const _number323 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number323][_number0])));
+  const _number387 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number387][_number0])));
+  const _number666 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number666][_number0])));
+  const _number777 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number777][_number0])));
+  const _number888 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number888][_number0])));
+  const _number1987 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number1987][_number0])));
+  const _number14750 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number14750][_number0])));
+  const _number15250 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number15250][_number0])));
 
-  const _number1 = window[_parseInt](myDeciph(window[_atob]([encryptedStrings._number1][_number0])));
-  const _number2 = window[_parseInt](myDeciph(window[_atob]([encryptedStrings._number2][_number0])));
-  const _number3 = window[_parseInt](myDeciph(window[_atob]([encryptedStrings._number3][_number0])));
-  const _number23 = window[_parseInt](myDeciph(window[_atob]([encryptedStrings._number23][_number0])));
-  const _number30 = window[_parseInt](myDeciph(window[_atob]([encryptedStrings._number30][_number0])));
-  const _number123 = window[_parseInt](myDeciph(window[_atob]([encryptedStrings._number123][_number0])));
-  const _number187 = window[_parseInt](myDeciph(window[_atob]([encryptedStrings._number187][_number0])));
-  const _number233 = window[_parseInt](myDeciph(window[_atob]([encryptedStrings._number233][_number0])));
-  const _number287 = window[_parseInt](myDeciph(window[_atob]([encryptedStrings._number287][_number0])));
-  const _number323 = window[_parseInt](myDeciph(window[_atob]([encryptedStrings._number323][_number0])));
-  const _number387 = window[_parseInt](myDeciph(window[_atob]([encryptedStrings._number387][_number0])));
-  const _number666 = window[_parseInt](myDeciph(window[_atob]([encryptedStrings._number666][_number0])));
-  const _number777 = window[_parseInt](myDeciph(window[_atob]([encryptedStrings._number777][_number0])));
-  const _number888 = window[_parseInt](myDeciph(window[_atob]([encryptedStrings._number888][_number0])));
-  const _number1987 = window[_parseInt](myDeciph(window[_atob]([encryptedStrings._number1987][_number0])));
-  const _number14750 = window[_parseInt](myDeciph(window[_atob]([encryptedStrings._number14750][_number0])));
-  const _number15250 = window[_parseInt](myDeciph(window[_atob]([encryptedStrings._number15250][_number0])));
+  const _Promise = await myDeciph(window[_atob]([encryptedStrings._Promise][_number0]));
+  const _RegExp = await myDeciph(window[_atob]([encryptedStrings._RegExp][_number0]));
+  const _Math = await myDeciph(window[_atob]([encryptedStrings._Math][_number0]));
+  const _JSON = await myDeciph(window[_atob]([encryptedStrings._JSON][_number0]));
 
-  const _Promise = myDeciph(window[_atob]([encryptedStrings._Promise][_number0]));
-  const _RegExp = myDeciph(window[_atob]([encryptedStrings._RegExp][_number0]));
-  const _Math = myDeciph(window[_atob]([encryptedStrings._Math][_number0]));
-  const _JSON = myDeciph(window[_atob]([encryptedStrings._JSON][_number0]));
+  const _strSelector001 = await myDeciph(window[_atob]([encryptedStrings._strSelector001][_number0]));
+  const _strSelector002 = await myDeciph(window[_atob]([encryptedStrings._strSelector002][_number0]));
+  const _strSelector003 = await myDeciph(window[_atob]([encryptedStrings._strSelector003][_number0]));
+  const _strSelector004 = await myDeciph(window[_atob]([encryptedStrings._strSelector004][_number0]));
+  const _strSelector005 = await myDeciph(window[_atob]([encryptedStrings._strSelector005][_number0]));
+  const _strSelector006 = await myDeciph(window[_atob]([encryptedStrings._strSelector006][_number0]));
+  const _strSelector007 = await myDeciph(window[_atob]([encryptedStrings._strSelector007][_number0]));
+  const _strSelector008 = await myDeciph(window[_atob]([encryptedStrings._strSelector008][_number0]));
+  const _strSelector009 = await myDeciph(window[_atob]([encryptedStrings._strSelector009][_number0]));
+  const _strSelector010 = await myDeciph(window[_atob]([encryptedStrings._strSelector010][_number0]));
+  const _strSelector011 = await myDeciph(window[_atob]([encryptedStrings._strSelector011][_number0]));
+  const _strSelector012 = await myDeciph(window[_atob]([encryptedStrings._strSelector012][_number0]));
+  const _strSelector013 = await myDeciph(window[_atob]([encryptedStrings._strSelector013][_number0]));
 
-  const _strSelector001 = myDeciph(window[_atob]([encryptedStrings._strSelector001][_number0]));
-  const _strSelector002 = myDeciph(window[_atob]([encryptedStrings._strSelector002][_number0]));
-  const _strSelector003 = myDeciph(window[_atob]([encryptedStrings._strSelector003][_number0]));
-  const _strSelector004 = myDeciph(window[_atob]([encryptedStrings._strSelector004][_number0]));
-  const _strSelector005 = myDeciph(window[_atob]([encryptedStrings._strSelector005][_number0]));
-  const _strSelector006 = myDeciph(window[_atob]([encryptedStrings._strSelector006][_number0]));
-  const _strSelector007 = myDeciph(window[_atob]([encryptedStrings._strSelector007][_number0]));
-  const _strSelector008 = myDeciph(window[_atob]([encryptedStrings._strSelector008][_number0]));
-  const _strSelector009 = myDeciph(window[_atob]([encryptedStrings._strSelector009][_number0]));
-  const _strSelector010 = myDeciph(window[_atob]([encryptedStrings._strSelector010][_number0]));
-  const _strSelector011 = myDeciph(window[_atob]([encryptedStrings._strSelector011][_number0]));
-  const _strSelector012 = myDeciph(window[_atob]([encryptedStrings._strSelector012][_number0]));
-  const _strSelector013 = myDeciph(window[_atob]([encryptedStrings._strSelector013][_number0]));
+  const string001 = await myDeciph(window[_atob]([encryptedStrings.string001][_number0]));
+  const string002 = await myDeciph(window[_atob]([encryptedStrings.string002][_number0]));
+  const string003 = await myDeciph(window[_atob]([encryptedStrings.string003][_number0]));
+  const string011 = await myDeciph(window[_atob]([encryptedStrings.string011][_number0]));
+  const string012 = await myDeciph(window[_atob]([encryptedStrings.string012][_number0]));
+  const string013 = await myDeciph(window[_atob]([encryptedStrings.string013][_number0]));
+  const string014 = await myDeciph(window[_atob]([encryptedStrings.string014][_number0]));
+  const string015 = await myDeciph(window[_atob]([encryptedStrings.string015][_number0]));
+  // const string016 = await myDeciph(window[_atob]([encryptedStrings.string016][_number0]));
+  const string017 = await myDeciph(window[_atob]([encryptedStrings.string017][_number0]));
+  const string018 = await myDeciph(window[_atob]([encryptedStrings.string018][_number0]));
+  const string019 = await myDeciph(window[_atob]([encryptedStrings.string019][_number0]));
+  const string020 = await myDeciph(window[_atob]([encryptedStrings.string020][_number0]));
+  const string021 = await myDeciph(window[_atob]([encryptedStrings.string021][_number0]));
+  const string022 = await myDeciph(window[_atob]([encryptedStrings.string022][_number0]));
+  const string023 = await myDeciph(window[_atob]([encryptedStrings.string023][_number0]));
+  const string024 = await myDeciph(window[_atob]([encryptedStrings.string024][_number0]));
 
-  const string001 = myDeciph(window[_atob]([encryptedStrings.string001][_number0]));
-  const string002 = myDeciph(window[_atob]([encryptedStrings.string002][_number0]));
-  const string003 = myDeciph(window[_atob]([encryptedStrings.string003][_number0]));
-  const string011 = myDeciph(window[_atob]([encryptedStrings.string011][_number0]));
-  const string012 = myDeciph(window[_atob]([encryptedStrings.string012][_number0]));
-  const string013 = myDeciph(window[_atob]([encryptedStrings.string013][_number0]));
-  const string014 = myDeciph(window[_atob]([encryptedStrings.string014][_number0]));
-  const string015 = myDeciph(window[_atob]([encryptedStrings.string015][_number0]));
-  // const string016 = myDeciph(window[_atob]([encryptedStrings.string016][_number0]));
-  const string017 = myDeciph(window[_atob]([encryptedStrings.string017][_number0]));
-  const string018 = myDeciph(window[_atob]([encryptedStrings.string018][_number0]));
-  const string019 = myDeciph(window[_atob]([encryptedStrings.string019][_number0]));
-  const string020 = myDeciph(window[_atob]([encryptedStrings.string020][_number0]));
-  const string021 = myDeciph(window[_atob]([encryptedStrings.string021][_number0]));
-  const string022 = myDeciph(window[_atob]([encryptedStrings.string022][_number0]));
-  const string023 = myDeciph(window[_atob]([encryptedStrings.string023][_number0]));
-  const string024 = myDeciph(window[_atob]([encryptedStrings.string024][_number0]));
+  const _click = await myDeciph(window[_atob]([encryptedStrings._click][_number0]));
 
-  const _click = myDeciph(window[_atob]([encryptedStrings._click][_number0]));
+  const _addEventListener = await myDeciph(window[_atob]([encryptedStrings._addEventListener][_number0]));
+  const _querySelector = await myDeciph(window[_atob]([encryptedStrings._querySelector][_number0]));
+  const _call = await myDeciph(window[_atob]([encryptedStrings._call][_number0]));
+  const _forEach = await myDeciph(window[_atob]([encryptedStrings._forEach][_number0]));
+  const _querySelectorAll = await myDeciph(window[_atob]([encryptedStrings._querySelectorAll][_number0]));
+  const _match = await myDeciph(window[_atob]([encryptedStrings._match][_number0]));
+  const _random = await myDeciph(window[_atob]([encryptedStrings._random][_number0]));
+  const _parse = await myDeciph(window[_atob]([encryptedStrings._parse][_number0]));
+  const _log = await myDeciph(window[_atob]([encryptedStrings._log][_number0]));
 
-  const _addEventListener = myDeciph(window[_atob]([encryptedStrings._addEventListener][_number0]));
-  const _querySelector = myDeciph(window[_atob]([encryptedStrings._querySelector][_number0]));
-  const _call = myDeciph(window[_atob]([encryptedStrings._call][_number0]));
-  const _forEach = myDeciph(window[_atob]([encryptedStrings._forEach][_number0]));
-  const _querySelectorAll = myDeciph(window[_atob]([encryptedStrings._querySelectorAll][_number0]));
-  const _match = myDeciph(window[_atob]([encryptedStrings._match][_number0]));
-  const _random = myDeciph(window[_atob]([encryptedStrings._random][_number0]));
-  const _parse = myDeciph(window[_atob]([encryptedStrings._parse][_number0]));
-  const _log = myDeciph(window[_atob]([encryptedStrings._log][_number0]));
+  const _duration = await myDeciph(window[_atob]([encryptedStrings._duration][_number0]));
+  const _currentTime = await myDeciph(window[_atob]([encryptedStrings._currentTime][_number0]));
+  const _readyState = await myDeciph(window[_atob]([encryptedStrings._readyState][_number0]));
+  const _innerText = await myDeciph(window[_atob]([encryptedStrings._innerText][_number0]));
+  const _muted = await myDeciph(window[_atob]([encryptedStrings._muted][_number0]));
+  const _style = await myDeciph(window[_atob]([encryptedStrings._style][_number0]));
+  const _height = await myDeciph(window[_atob]([encryptedStrings._height][_number0]));
+  const _width = await myDeciph(window[_atob]([encryptedStrings._width][_number0]));
+  const _document = await myDeciph(window[_atob]([encryptedStrings._document][_number0]));
+  const _opacity = await myDeciph(window[_atob]([encryptedStrings._opacity][_number0]));
+  const _console = await myDeciph(window[_atob]([encryptedStrings._console][_number0]));
 
-  const _duration = myDeciph(window[_atob]([encryptedStrings._duration][_number0]));
-  const _currentTime = myDeciph(window[_atob]([encryptedStrings._currentTime][_number0]));
-  const _readyState = myDeciph(window[_atob]([encryptedStrings._readyState][_number0]));
-  const _innerText = myDeciph(window[_atob]([encryptedStrings._innerText][_number0]));
-  const _muted = myDeciph(window[_atob]([encryptedStrings._muted][_number0]));
-  const _style = myDeciph(window[_atob]([encryptedStrings._style][_number0]));
-  const _height = myDeciph(window[_atob]([encryptedStrings._height][_number0]));
-  const _width = myDeciph(window[_atob]([encryptedStrings._width][_number0]));
-  const _document = myDeciph(window[_atob]([encryptedStrings._document][_number0]));
-  const _opacity = myDeciph(window[_atob]([encryptedStrings._opacity][_number0]));
-  const _console = myDeciph(window[_atob]([encryptedStrings._console][_number0]));
-
-  const _true = window[_JSON][_parse](myDeciph(window[_atob]([encryptedStrings._null][_number0])));
-  const _false = window[_JSON][_parse](myDeciph(window[_atob]([encryptedStrings._true][_number0])));
-  const _null = window[_JSON][_parse](myDeciph(window[_atob]([encryptedStrings._false][_number0])));
+  const _null = window[_JSON][_parse](await myDeciph(window[_atob]([encryptedStrings._null][_number0])));
+  const _true = window[_JSON][_parse](await myDeciph(window[_atob]([encryptedStrings._true][_number0])));
+  const _false = window[_JSON][_parse](await myDeciph(window[_atob]([encryptedStrings._false][_number0])));
 
   window[_console][_log](string024);
 
@@ -348,6 +347,7 @@ And protected with a salt key, if you wish to know more contact me at my email a
           window[_clearInterval](interval);
           isWaitingNext = _false; isResumingEpisode = _false; clickedNext = _false;
           executeIntervalCheck();
+          return;
         }
 
         if (!next() && video()[_duration] - video()[_currentTime] <= 16) {
