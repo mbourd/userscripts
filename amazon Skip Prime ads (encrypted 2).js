@@ -13,17 +13,35 @@
 !! NOTE: !!
 The script has been voluntarily written with unnecessary codes.
 The code structure is not intended to look beautiful or optimized.
-Then I use an obfuscator tool to make the code unreadable and hard to understand for human
+Then I use an obfuscator tool to make the code unreadable and hard to understand for human (optional)
 More code more efficient is the obfuscation
 (check the last line of the file to see the obfuscated code)
-Use only obfuscated code
 
 !! WARNING !!
-This script is not usable on your side, because at line 82 all strings are now encrypted with AES-GCM
-The cipher is not implemented becauuse, the encrypted strings are hard coded
-And protected with a salt key, if you wish to know more contact me at my email address
+This script is not usable on your side, because at line 82 all strings are now encrypted with AES-GCM.
+The cipher is not implemented because, the encrypted strings are hard coded.
+The decipher is partialy implemented but not usable on your side, because you need to know the methods.
+The strings are protected with a salt key, if you wish to know more contact me at my email address.
 */
 
+if (!localStorage.getItem('userscript')) {
+  localStorage.setItem('userscript', JSON.stringify(
+    /*
+    U2FsdGVkX1/ZlTTqBUmOb4DUilkhfroCCxiC7IeKYugo4ruD128ARTGPRsD/uR36CQOF08i8wX5bZo3zyR5BqtHd1y2mmU/E/k3JYQ6VFcpl7028Cp1oQQnrQdXxFbfsJ4r7Ax4Mq17K694UvYB4RQ==
+    */
+    {}
+  ));
+}
+if (!localStorage.getItem('cryptoWebApi')) {
+  localStorage.setItem('cryptoWebApi', JSON.stringify(
+    /*
+    U2FsdGVkX19Homo+60xJni9z4fveNVETNVaBtk64gudfidQIAFkJG/teyOute4k7rae6a64iSK+puT66DkM8ht4iDw8CuPl7f7rYjRenvnDtpqdEwLfrRUZiSke+BmAJmXQe7hU3KvdUEIhzvYIbfxAiy7QpFQu4FGMqc/LeXXBUTKJj7XuFl9CksgZtnUM64PbwT4T3mnhd2tznp/Ye5+ECpefwVZHPP3rPB4a2XrlTjq9HWjORHXk0sjWGN7x+ymNtsONU0RiBbDLhza5QAtiUMr81q4p7ROYYY8V0Tcos2JZ4mPhzSu0tyMUdMLAnj4IqI9b8kRLrsEhc6+9kTtIi8mOO4ziRbd74D4FOvebRKkjdTYPqQYbGjbZRRPIE6daxmvsWk8DrjIMgmp9tiGMYVvvl12bkekxRPF8f1eCWGt3G0PyWgRi5K0seEi0DCGpQ0M3AHmGKUHcJUcHK2t+DPrUM9wpzz4AewVrH9OYHckBuQCgVCEwnQF9KLNOms+lvjeUoua7n9HrnHfSQRk95jNiVfKcXZUxHwX5jOhaWHUyM1p4RTdk7GaiP3kK3ItkQjC/B5OHd1Y8hEWXZQ+kaW6QcKdWWWfHa8A4JUgFdk8YDIPu02YXlZCfxGAQa1VVFk6n5l7LzaIydK5ZRrF9Rhbwyb/NdjSaJJrJ4BrEx4iG0cx8sXda1cMAs+SiIsW83R2K4bFQEkFmpCNN0rea2OijG7kwJfQBb00RnC6vOhl0Ynwob4xweVKFRX4d1XskaDKmzXcuY3ZUGGhHq07V1KOKlYA0+L7gzVQP8UfoHSdB2NSO16SRCMvqwdBY00JncZ/zXSYBZRPlcvB+LAdpZPVKUo4ZpFupO+hARNSudg1qwssyfTl0TVZ6WMZtS
+    */
+    {}
+  ));
+}
+
+const webCryptoApi_ = JSON.parse(localStorage.getItem('cryptoWebApi'));
 
 //Develop here then obfuscate
 (async function () {
@@ -31,52 +49,54 @@ And protected with a salt key, if you wish to know more contact me at my email a
 
   async function decipher(myPassword) {
     return async (_encrypted) => {
-      const encoder = new window[window[___atob()]('VGV4dEVuY29kZXI=')]();
-      const decoder = new window[window[___atob()]('VGV4dERlY29kZXI=')]();
+      const encoder = new window[webCryptoApi_.m001]();
+      const decoder = new window[webCryptoApi_.m002]();
 
       const fromBase64 = buffer =>
-        window[window[___atob()]('VWludDhBcnJheQ==')][window[___atob()]('ZnJvbQ==')](window[___atob()](buffer), c => c[window[___atob()]('Y2hhckNvZGVBdA==')](0));
+        window[webCryptoApi_.m003][webCryptoApi_.m013](window[webCryptoApi_.m004](buffer), c => c[webCryptoApi_.m005](webCryptoApi_.v009));
 
-      const PBKDF2 = async (password, salt, iterations, length, hash, algorithm = window[___atob()]('QUVTLUNCQw==')) => {
-        const keyMaterial = await window[window[___atob()]('Y3J5cHRv')][window[___atob()]('c3VidGxl')][window[___atob()]('aW1wb3J0S2V5')](
-          'raw',
-          encoder[window[___atob()]('ZW5jb2Rl')](password),
-          { name: window[___atob()]('UEJLREYy') },
-          false,
-          ['deriveKey']
+      const PBKDF2 = async (
+        password, salt, iterations, length, hash = webCryptoApi_.str001, algorithm = webCryptoApi_.str002
+      ) => {
+        const keyMaterial = await window[webCryptoApi_.m006][webCryptoApi_.m007][webCryptoApi_.m008](
+          webCryptoApi_.str003,
+          encoder[webCryptoApi_.m009](password),
+          webCryptoApi_.v005,
+          webCryptoApi_.v002,
+          webCryptoApi_.v004
         );
-        return await window[window[___atob()]('Y3J5cHRv')][window[___atob()]('c3VidGxl')][window[___atob()]('ZGVyaXZlS2V5')](
+        return await window[webCryptoApi_.m006][webCryptoApi_.m007][webCryptoApi_.m010](
           {
-            name: window[___atob()]('UEJLREYy'),
-            salt: encoder[window[___atob()]('ZW5jb2Rl')](salt), // reserved prop name (can't rename)
-            iterations, // reserved prop name (can't rename)
+            name: webCryptoApi_.str005,
+            salt: encoder[webCryptoApi_.m009](salt),
+            iterations,
             hash
           },
           keyMaterial,
           { name: algorithm, length },
-          false,
-          [window[___atob()]('ZW5jcnlwdA=='), window[___atob()]('ZGVjcnlwdA==')]
+          webCryptoApi_.v002,
+          webCryptoApi_.v003
         );
       };
 
-      const salt_len = 16;
-      const iv_len = 16;
+      const salt_len = webCryptoApi_.v006;
+      const iv_len = webCryptoApi_.v006;
       const encrypted = fromBase64(_encrypted);
-      const salt = encrypted[window[___atob()]('c2xpY2U=')](0, salt_len);
-      const iv = encrypted[window[___atob()]('c2xpY2U=')](0 + salt_len, salt_len + iv_len);
-      const key = await PBKDF2(myPassword, salt, 100000, 256, window[___atob()]('U0hBLTM4NA=='), window[___atob()]('QUVTLUdDTQ=='));
-      const decrypted = await window[window[___atob()]('Y3J5cHRv')][window[___atob()]('c3VidGxl')][window[___atob()]('ZGVjcnlwdA==')](
-        { name: window[___atob()]('QUVTLUdDTQ=='), iv /*reserved prop name (can't rename)*/ },
-        key,
-        encrypted[window[___atob()]('c2xpY2U=')](salt_len + iv_len)
-      );
+      const salt = encrypted[webCryptoApi_.m011](webCryptoApi_.v009, salt_len);
+      const iv = encrypted[webCryptoApi_.m011](webCryptoApi_.v009 + salt_len, salt_len + iv_len);
+      const key = await PBKDF2(myPassword, salt, webCryptoApi_.v007, webCryptoApi_.v008, webCryptoApi_.str007, webCryptoApi_.str008);
 
-      return decoder[window[___atob()]('ZGVjb2Rl')](decrypted);
+      const decrypted = await window[webCryptoApi_.m006][webCryptoApi_.m007][webCryptoApi_.m012](
+        { name: webCryptoApi_.str008, iv },
+        key,
+        encrypted[webCryptoApi_.m011](salt_len + iv_len)
+      );
+      return decoder[webCryptoApi_.str009](decrypted);
     }
   }
 
   const saltKey = () => window[(() => window[___atob()]('ZG9jdW1lbnQ='))()][(() => window[___atob()]('cXVlcnlTZWxlY3Rvcg=='))()](
-    (() => window[___atob()]('bGFiZWxbZm9yXj0iaW5wdXQtbmF2LXByb2ZpbGUtYW16bjEuYWN0b3IucGVyc29uLm9pZCJdID4gbGk='))()
+    (() => JSON.parse(localStorage.getItem('userscript')).saltKeySelector)()
   )[(() => window[___atob()]('aW5uZXJUZXh0'))()];
 
   const encryptedStrings = {
