@@ -41,7 +41,7 @@ if (!localStorage.getItem('cryptoWebApi')) {
   ));
 }
 
-const webCryptoApi_ = JSON.parse(localStorage.getItem('cryptoWebApi'));
+const webCryptoApi_ = JSON.parse(localStorage.getItem((() => 'cryptoWebApi')()));
 const cryptoAPI015 = webCryptoApi_[(() => 'cryptoAPI015')()]; const cryptoAPI006 = webCryptoApi_[(() => 'cryptoAPI006')()];
 const cryptoAPI007 = webCryptoApi_[(() => 'cryptoAPI007')()]; const cryptoAPI017 = webCryptoApi_[(() => 'cryptoAPI017')()];
 const cryptoAPI018 = webCryptoApi_[(() => 'cryptoAPI018')()]; const cryptoAPI019 = webCryptoApi_[(() => 'cryptoAPI019')()];
@@ -214,9 +214,13 @@ const cryptoAPI024 = webCryptoApi_[(() => 'cryptoAPI024')()]; const cryptoAPI016
   const _parseInt = await myDeciph(window[_atob]([encryptedStrings._parseInt][0]));
   const _number0 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number0][0])));
 
+  console.log('phase 1 : ok');
+
   const _clearInterval = await myDeciph(window[_atob]([encryptedStrings._clearInterval][_number0]));
   const _setTimeout = await myDeciph(window[_atob]([encryptedStrings._setTimeout][_number0]));
   const _setInterval = await myDeciph(window[_atob]([encryptedStrings._setInterval][_number0]));
+
+  console.log('phase 2 : ok');
 
   const _number1 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number1][_number0])));
   const _number2 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number2][_number0])));
@@ -236,10 +240,14 @@ const cryptoAPI024 = webCryptoApi_[(() => 'cryptoAPI024')()]; const cryptoAPI016
   const _number14750 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number14750][_number0])));
   const _number15250 = window[_parseInt](await myDeciph(window[_atob]([encryptedStrings._number15250][_number0])));
 
+  console.log('phase 3 : ok');
+
   const _Promise = await myDeciph(window[_atob]([encryptedStrings._Promise][_number0]));
   const _RegExp = await myDeciph(window[_atob]([encryptedStrings._RegExp][_number0]));
   const _Math = await myDeciph(window[_atob]([encryptedStrings._Math][_number0]));
   const _JSON = await myDeciph(window[_atob]([encryptedStrings._JSON][_number0]));
+
+  console.log('phase 4 : ok');
 
   const _strSelector001 = await myDeciph(window[_atob]([encryptedStrings._strSelector001][_number0]));
   const _strSelector002 = await myDeciph(window[_atob]([encryptedStrings._strSelector002][_number0]));
@@ -254,6 +262,8 @@ const cryptoAPI024 = webCryptoApi_[(() => 'cryptoAPI024')()]; const cryptoAPI016
   const _strSelector011 = await myDeciph(window[_atob]([encryptedStrings._strSelector011][_number0]));
   const _strSelector012 = await myDeciph(window[_atob]([encryptedStrings._strSelector012][_number0]));
   const _strSelector013 = await myDeciph(window[_atob]([encryptedStrings._strSelector013][_number0]));
+
+  console.log('phase 5 : ok');
 
   const string001 = await myDeciph(window[_atob]([encryptedStrings.string001][_number0]));
   const string002 = await myDeciph(window[_atob]([encryptedStrings.string002][_number0]));
@@ -273,7 +283,11 @@ const cryptoAPI024 = webCryptoApi_[(() => 'cryptoAPI024')()]; const cryptoAPI016
   const string023 = await myDeciph(window[_atob]([encryptedStrings.string023][_number0]));
   const string024 = await myDeciph(window[_atob]([encryptedStrings.string024][_number0]));
 
+  console.log('phase 6 : ok');
+
   const _click = await myDeciph(window[_atob]([encryptedStrings._click][_number0]));
+
+  console.log('phase 7 : ok');
 
   const _addEventListener = await myDeciph(window[_atob]([encryptedStrings._addEventListener][_number0]));
   const _querySelector = await myDeciph(window[_atob]([encryptedStrings._querySelector][_number0]));
@@ -284,6 +298,8 @@ const cryptoAPI024 = webCryptoApi_[(() => 'cryptoAPI024')()]; const cryptoAPI016
   const _random = await myDeciph(window[_atob]([encryptedStrings._random][_number0]));
   const _parse = await myDeciph(window[_atob]([encryptedStrings._parse][_number0]));
   const _log = await myDeciph(window[_atob]([encryptedStrings._log][_number0]));
+
+  console.log('phase 8 : ok');
 
   const _duration = await myDeciph(window[_atob]([encryptedStrings._duration][_number0]));
   const _currentTime = await myDeciph(window[_atob]([encryptedStrings._currentTime][_number0]));
@@ -296,6 +312,8 @@ const cryptoAPI024 = webCryptoApi_[(() => 'cryptoAPI024')()]; const cryptoAPI016
   const _document = await myDeciph(window[_atob]([encryptedStrings._document][_number0]));
   const _opacity = await myDeciph(window[_atob]([encryptedStrings._opacity][_number0]));
   const _console = await myDeciph(window[_atob]([encryptedStrings._console][_number0]));
+
+  console.log('phase 9 : ok');
 
   const _null = window[_JSON][_parse](await myDeciph(window[_atob]([encryptedStrings._null][_number0])));
   const _true = window[_JSON][_parse](await myDeciph(window[_atob]([encryptedStrings._true][_number0])));
@@ -395,7 +413,7 @@ const cryptoAPI024 = webCryptoApi_[(() => 'cryptoAPI024')()]; const cryptoAPI016
   function executeIntervalCheck() {
     interval = window[_setInterval](async () => {
       if (isWatching) {
-        let skipNext = window[_document][_querySelector](_strSelector002) || window[_document][_querySelector](_strSelector009);
+        let skipNext = () => window[_document][_querySelector](_strSelector002) || window[_document][_querySelector](_strSelector009);
         // let skipRecap = ()=>window[_document][_querySelector](_strSelector007);
         let next = () => window[_document][_querySelector](_strSelector003);
         let playPause = () => window[_document][_querySelector](_strSelector004);
@@ -463,7 +481,7 @@ const cryptoAPI024 = webCryptoApi_[(() => 'cryptoAPI024')()]; const cryptoAPI016
           }
         }
 
-        if ((isWaitingNext || isResumingEpisode || clickedNext) && skipNext[_innerText][_match](regExpSkip) && !next()) {
+        if ((isWaitingNext || isResumingEpisode || clickedNext) && skipNext()[_innerText][_match](regExpSkip) && !next()) {
           window[_clearInterval](interval);
           window[_console][_log](string023);
           // window[_console][_log](skipNext);
@@ -472,9 +490,9 @@ const cryptoAPI024 = webCryptoApi_[(() => 'cryptoAPI024')()]; const cryptoAPI016
           await sleep(_number1987 + getRandomArbitrary(_number323, _number387));
           // await sleep(_number777);
           await sleep(_number777 + getRandomArbitrary(_number187, _number387) - _number23);
-          skipNext.focus();
+          skipNext().focus();
           await sleep(_number23);
-          skipNext[_click]();
+          skipNext()[_click]();
           window[_console][_log](string015);
           muteVideos(_false); hideVideos(string012);
           await sleep(_number1987 * _number3 + getRandomArbitrary(_number323, _number387));
