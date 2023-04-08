@@ -11,16 +11,16 @@
 
 /*
 !! NOTE: !!
-The script has been voluntarily written with unnecessary codes.
+The script has been "voluntarily" written with unnecessary codes.
 The code structure is not intended to look beautiful or optimized.
 Then I use an obfuscator tool to make the code unreadable and hard to understand for human (optional)
 More code more efficient is the obfuscation
 (check the last line of the file to see the obfuscated code)
 
 !! WARNING !!
-This script is not usable on your side, because at line 199 all strings are now encrypted with AES-GCM.
+This script is not usable on your side, because on line 213 all strings are now encrypted with AES-GCM.
 The cipher is not implemented because, the encrypted strings are hard coded.
-The decipher is partialy implemented but not usable on your side, because you need to know the methods.
+The decipher is partially implemented but not usable on your side, because you need to know the methods.
 The strings are protected with a salt key, if you wish to know more contact me at my email address.
 */
 
