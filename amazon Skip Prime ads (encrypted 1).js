@@ -11,16 +11,15 @@
 
 /*
 !! NOTE: !!
-The script has been voluntarily written with unnecessary codes.
+The script has been "voluntarily" written with unnecessary codes.
 The code structure is not intended to look beautiful or optimized.
-Then I use an obfuscator tool to make the code unreadable and hard to understand for human
+Then I use an obfuscator tool to make the code unreadable and hard to understand for human (optional)
 More code more efficient is the obfuscation
 (check the last line of the file to see the obfuscated code)
-Use only obfuscated code
 
 !! WARNING !!
-This script is not usable on your side, because at line 56 all strings are now encrypted
-with homemade cipher, function not implemented here because encrypted strings are hard coded
+This script is not usable on your side, because on line 136 all strings are now encrypted
+With homemade cipher, function not implemented here because encrypted strings are hard coded
 And protected with a salt key, if you wish to know more contact me at my email address
 */
 
