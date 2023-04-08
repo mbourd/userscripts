@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name        Amazon prime video - skip ads (encrypted 2)
-// @version     1.0.0
+// @version     1.2.3
 // @author      maxime.bourdin.tic@gmail.com
 // @description Automatically skips Amazon prime ads.
-// @match       https://www.primevideo.com/*
+// @match       https://www.primevideo.com/region/*/detail/*
 // @icon        https://www.google.com/s2/favicons?domain=primevideo.com
 // @license     MIT
 // @grant       none
