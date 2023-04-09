@@ -44,25 +44,24 @@ if (!localStorage.getItem('cryptoWebApi')) {
 //Develop here then obfuscate
 (async function () {
   const ___atob = () => 'atob';
+  const webCryptoApi_ = JSON.parse(localStorage.getItem((() => 'cryptoWebApi')()));
+  const cryptoAPI015 = webCryptoApi_[(() => 'cryptoAPI015')()]; const cryptoAPI006 = webCryptoApi_[(() => 'cryptoAPI006')()];
+  const cryptoAPI007 = webCryptoApi_[(() => 'cryptoAPI007')()]; const cryptoAPI017 = webCryptoApi_[(() => 'cryptoAPI017')()];
+  const cryptoAPI018 = webCryptoApi_[(() => 'cryptoAPI018')()]; const cryptoAPI019 = webCryptoApi_[(() => 'cryptoAPI019')()];
+  const cryptoAPI020 = webCryptoApi_[(() => 'cryptoAPI020')()]; const cryptoAPI021 = webCryptoApi_[(() => 'cryptoAPI021')()];
+  const cryptoAPI022 = webCryptoApi_[(() => 'cryptoAPI022')()]; const cryptoAPI029 = webCryptoApi_[(() => 'cryptoAPI029')()];
+  const cryptoAPI001 = webCryptoApi_[(() => 'cryptoAPI001')()]; const cryptoAPI002 = webCryptoApi_[(() => 'cryptoAPI002')()];
+  const cryptoAPI025 = webCryptoApi_[(() => 'cryptoAPI025')()]; const cryptoAPI003 = webCryptoApi_[(() => 'cryptoAPI003')()];
+  const cryptoAPI027 = webCryptoApi_[(() => 'cryptoAPI027')()]; const cryptoAPI013 = webCryptoApi_[(() => 'cryptoAPI013')()];
+  const cryptoAPI010 = webCryptoApi_[(() => 'cryptoAPI010')()]; const cryptoAPI012 = webCryptoApi_[(() => 'cryptoAPI012')()];
+  const cryptoAPI004 = webCryptoApi_[(() => 'cryptoAPI004')()]; const cryptoAPI005 = webCryptoApi_[(() => 'cryptoAPI005')()];
+  const cryptoAPI011 = webCryptoApi_[(() => 'cryptoAPI011')()]; const cryptoAPI014 = webCryptoApi_[(() => 'cryptoAPI014')()];
+  const cryptoAPI028 = webCryptoApi_[(() => 'cryptoAPI028')()]; const cryptoAPI026 = webCryptoApi_[(() => 'cryptoAPI026')()];
+  const cryptoAPI008 = webCryptoApi_[(() => 'cryptoAPI008')()]; const cryptoAPI023 = webCryptoApi_[(() => 'cryptoAPI023')()];
+  const cryptoAPI024 = webCryptoApi_[(() => 'cryptoAPI024')()]; const cryptoAPI016 = webCryptoApi_[(() => 'cryptoAPI016')()];
 
   async function decipher(myPassword, iterations = cryptoAPI015, hash = cryptoAPI006, algo = cryptoAPI007) {
     return async (_encrypted) => {
-      const webCryptoApi_ = JSON.parse(localStorage.getItem((() => 'cryptoWebApi')()));
-      const cryptoAPI015 = webCryptoApi_[(() => 'cryptoAPI015')()]; const cryptoAPI006 = webCryptoApi_[(() => 'cryptoAPI006')()];
-      const cryptoAPI007 = webCryptoApi_[(() => 'cryptoAPI007')()]; const cryptoAPI017 = webCryptoApi_[(() => 'cryptoAPI017')()];
-      const cryptoAPI018 = webCryptoApi_[(() => 'cryptoAPI018')()]; const cryptoAPI019 = webCryptoApi_[(() => 'cryptoAPI019')()];
-      const cryptoAPI020 = webCryptoApi_[(() => 'cryptoAPI020')()]; const cryptoAPI021 = webCryptoApi_[(() => 'cryptoAPI021')()];
-      const cryptoAPI022 = webCryptoApi_[(() => 'cryptoAPI022')()]; const cryptoAPI029 = webCryptoApi_[(() => 'cryptoAPI029')()];
-      const cryptoAPI001 = webCryptoApi_[(() => 'cryptoAPI001')()]; const cryptoAPI002 = webCryptoApi_[(() => 'cryptoAPI002')()];
-      const cryptoAPI025 = webCryptoApi_[(() => 'cryptoAPI025')()]; const cryptoAPI003 = webCryptoApi_[(() => 'cryptoAPI003')()];
-      const cryptoAPI027 = webCryptoApi_[(() => 'cryptoAPI027')()]; const cryptoAPI013 = webCryptoApi_[(() => 'cryptoAPI013')()];
-      const cryptoAPI010 = webCryptoApi_[(() => 'cryptoAPI010')()]; const cryptoAPI012 = webCryptoApi_[(() => 'cryptoAPI012')()];
-      const cryptoAPI004 = webCryptoApi_[(() => 'cryptoAPI004')()]; const cryptoAPI005 = webCryptoApi_[(() => 'cryptoAPI005')()];
-      const cryptoAPI011 = webCryptoApi_[(() => 'cryptoAPI011')()]; const cryptoAPI014 = webCryptoApi_[(() => 'cryptoAPI014')()];
-      const cryptoAPI028 = webCryptoApi_[(() => 'cryptoAPI028')()]; const cryptoAPI026 = webCryptoApi_[(() => 'cryptoAPI026')()];
-      const cryptoAPI008 = webCryptoApi_[(() => 'cryptoAPI008')()]; const cryptoAPI023 = webCryptoApi_[(() => 'cryptoAPI023')()];
-      const cryptoAPI024 = webCryptoApi_[(() => 'cryptoAPI024')()]; const cryptoAPI016 = webCryptoApi_[(() => 'cryptoAPI016')()];
-
       const _propNameSalt = () => 'salt'; const _propNameIV = () => 'iv';
       const _propNameIterations = () => 'iterations'; const _propNameHash = () => 'hash';
       const _propNameName = () => 'name'; const _propNameLength = () => 'length';
