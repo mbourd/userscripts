@@ -112,9 +112,9 @@ if (!localStorage.getItem('cryptoWebApi')) {
     }
   }
 
-  const saltKey = () => window[(() => window[___atob()]('ZG9jdW1lbnQ='))()][(() => window[___atob()]('cXVlcnlTZWxlY3Rvcg=='))()](
-    (() => JSON.parse(localStorage.getItem('userscript'))[(() => 'saltKeySelector')()])()
-  )[(() => window[___atob()]('aW5uZXJUZXh0'))()];
+  const saltKey = () => window[(() => window[___atob()]((() => 'ZG9jdW1lbnQ=')()))()][(() => window[___atob()]((() => 'cXVlcnlTZWxlY3Rvcg==')()))()](
+    (() => JSON.parse(localStorage.getItem((() => 'userscript')()))[(() => 'saltKeySelector')()])()
+  )[(() => window[___atob()]((() => 'aW5uZXJUZXh0')()))()];
 
   const encryptedStrings = {
     "_atob": "cJlpZFUCj8Z0nFlPshIMucBtw4VUUizKlgkasctFiUVOcyEaL3nqeW4XJF8M0ZA4Y8zppA==",
@@ -208,7 +208,7 @@ if (!localStorage.getItem('cryptoWebApi')) {
 
   const myDeciph = await decipher(saltKey());
 
-  window[window[___atob()]('Y29uc29sZQ==')][window[___atob()]('bG9n')](window[___atob()]('ZGVjcnlwdGluZy4uLg=='));
+  window[window[___atob()]((() => 'Y29uc29sZQ==')())][window[___atob()]((() => 'bG9n')())](window[___atob()]((() => 'ZGVjcnlwdGluZy4uLg==')()));
 
   const _atob = await myDeciph([encryptedStrings._atob][0]);
   const _parseInt = await myDeciph([encryptedStrings._parseInt][0]);
@@ -414,9 +414,9 @@ if (!localStorage.getItem('cryptoWebApi')) {
     interval = window[_setInterval](async () => {
       if (isWatching) {
         const sNx = () => window[_document][_querySelector](_strSelector002) || window[_document][_querySelector](_strSelector009);
-        // const skipRecap = ()=>window[_document][_querySelector](_strSelector007);
+        // const sRp = ()=>window[_document][_querySelector](_strSelector007);
         const nx = () => window[_document][_querySelector](_strSelector003);
-        const playPause = () => window[_document][_querySelector](_strSelector004);
+        const pP = () => window[_document][_querySelector](_strSelector004);
         const vi = () => window[_document][_querySelectorAll](string011)[_number0];
         const tI = () => window[_document][_querySelector](_strSelector008);
         const adTI = () => window[_document][_querySelector](_strSelector012);
@@ -506,8 +506,6 @@ if (!localStorage.getItem('cryptoWebApi')) {
     }, (() => {
       const vi = () => window[_document][_querySelectorAll](string011)[_number0];
       let t = !isWaitingNext && !isResumingEpisode && !clickedNext
-        // ? numNum(_number123, _number187)
-        // ? numNum(_number777, _number888)
         ? numNum(_number14750, _number15250)
         : numNum(_number123, _number187)
         ;
