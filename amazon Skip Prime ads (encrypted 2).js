@@ -67,8 +67,8 @@ if (!localStorage.getItem('cryptoWebApi')) {
       const _propNameIterations = () => 'iterations'; const _propNameHash = () => 'hash';
       const _propNameName = () => 'name'; const _propNameLength = () => 'length';
 
-      const encoder = new window[cryptoAPI017]();
-      const decoder = new window[cryptoAPI018]();
+      const e = new window[cryptoAPI017]();
+      const d = new window[cryptoAPI018]();
 
       const fromBase64 = buffer =>
         window[cryptoAPI019][cryptoAPI020](window[cryptoAPI021](buffer), c => c[cryptoAPI022](cryptoAPI029));
@@ -76,9 +76,9 @@ if (!localStorage.getItem('cryptoWebApi')) {
       const PBKDF2 = async (
         password, salt, iterations, length, hash = cryptoAPI001, algorithm = cryptoAPI002
       ) => {
-        const keyMaterial = await window[cryptoAPI023][cryptoAPI024][cryptoAPI025](
+        const kM = await window[cryptoAPI023][cryptoAPI024][cryptoAPI025](
           cryptoAPI003,
-          encoder[cryptoAPI027](password),
+          e[cryptoAPI027](password),
           cryptoAPI013,
           cryptoAPI010,
           cryptoAPI012
@@ -86,11 +86,11 @@ if (!localStorage.getItem('cryptoWebApi')) {
         return await window[cryptoAPI023][cryptoAPI024][cryptoAPI004](
           {
             [(() => _propNameName())()]: cryptoAPI005,
-            [(() => _propNameSalt())()]: encoder[cryptoAPI027](salt),
+            [(() => _propNameSalt())()]: e[cryptoAPI027](salt),
             [(() => _propNameIterations())()]: iterations,
             [(() => _propNameHash())()]: hash
           },
-          keyMaterial,
+          kM,
           { [(() => _propNameName())()]: algorithm, [(() => _propNameLength())()]: length },
           cryptoAPI010,
           cryptoAPI011
@@ -109,7 +109,7 @@ if (!localStorage.getItem('cryptoWebApi')) {
         key,
         encrypted[cryptoAPI028](salt_len + iv_len)
       );
-      return decoder[cryptoAPI008](decrypted);
+      return d[cryptoAPI008](decrypted);
     }
   }
 
