@@ -1,4 +1,4 @@
-// ==UserScript==
+// ====
 // @name        Amazon prime video - skip ads (encrypted 2)
 // @version     1.2.3
 // @author      maxime.bourdin.tic@gmail.com
@@ -7,7 +7,7 @@
 // @icon        https://www.google.com/s2/favicons?domain=primevideo.com
 // @license     MIT
 // @grant       none
-// ==/UserScript==
+// ==/==
 
 /*
 !! NOTE: !!
@@ -240,7 +240,7 @@ if (!localStorage.getItem('cryptoWebApi')) {
   const _number14750 = window[_parseInt](await myDeciph([encryptedStrings._number14750][_number0]));
   const _number15250 = window[_parseInt](await myDeciph([encryptedStrings._number15250][_number0]));
 
-  console.log('phase 3 : ok');
+  console.log((() => 'phase 3 : ok')());
 
   const _Promise = await myDeciph([encryptedStrings._Promise][_number0]);
   const _RegExp = await myDeciph([encryptedStrings._RegExp][_number0]);

@@ -1,4 +1,4 @@
-// ==UserScript==
+// ====
 // @name        Amazon prime video - skip ads (encrypted 1)
 // @version     6.6.6
 // @author      maxime.bourdin.tic@gmail.com
@@ -7,7 +7,7 @@
 // @icon        https://www.google.com/s2/favicons?domain=primevideo.com
 // @license     MIT
 // @grant       none
-// ==/UserScript==
+// ==/==
 
 /*
 !! NOTE: !!
