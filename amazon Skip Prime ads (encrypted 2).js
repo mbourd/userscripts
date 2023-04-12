@@ -340,13 +340,13 @@ if (!localStorage.getItem('cryptoWebApi')) {
     mV(); hV();
     window[_console][_log](string018);
     window[_clearInterval](interval);
-    await zzZZzZ(_number1987);
+    await zzZ(_number1987);
     interval = _null;
     isResumingEpisode = _true;
     clickedNext = _false;
     isWatching = _true;
     check();
-    await zzZZzZ(_number1987);
+    await zzZ(_number1987);
 
     if (!closeHasClickEvt) {
       closeHasClickEvt = _true;
@@ -387,12 +387,12 @@ if (!localStorage.getItem('cryptoWebApi')) {
   //     console[_log]('pause');
   // });
 
-  function zzZZzZ(ms = "") {
+  function zzZ(ms = "") {
     if (ms === "") { ms = _number1; }
     return new window[_Promise](resolve => window[_setTimeout](resolve, ms));
   }
 
-  function numNum(min, max) {
+  function gimeN(min, max) {
     return window[_parseInt](window[_Math][_random]() * (max - min) + min);
   }
 
@@ -456,14 +456,14 @@ if (!localStorage.getItem('cryptoWebApi')) {
           if (vi()[_duration] - vi()[_currentTime] <= _number23 && !clickedNext) {
             window[_clearInterval](interval);
             window[_console][_log](string022);
-            await zzZZzZ(_number777 + numNum(_number0, _number30) - _number23);
+            await zzZ(_number777 + gimeN(_number0, _number30) - _number23);
             mV(); hV();
             nx().focus();
-            await zzZZzZ(_number23);
+            await zzZ(_number23);
             nx()[_click]();
             window[_console][_log](`${string020} ${nx()[_innerText]}`);
             clickedNext = _true;
-            await zzZZzZ(_number387);
+            await zzZ(_number387);
             // window[_console][_log]("isWaitingNext:", isWaitingNext);
             // window[_console][_log]("clickedNext:", clickedNext);
             // window[_console][_log]("isResumingEpisode:", isResumingEpisode);
@@ -487,15 +487,15 @@ if (!localStorage.getItem('cryptoWebApi')) {
           // window[_console][_log](sNx);
           mV(); hV();
           isWaitingNext = _false; isResumingEpisode = _false; clickedNext = _false;
-          await zzZZzZ(_number666);
+          await zzZ(_number666);
           sNx().focus();
-          await zzZZzZ(_number1);
+          await zzZ(_number1);
           sNx()[_click]();
           window[_console][_log](string015);
           mV(_false); hV(string012);
-          await zzZZzZ(_number1987 * _number3 + numNum(_number323, _number387));
-          await zzZZzZ(_number1987 * _number3 + numNum(_number323, _number387));
-          await zzZZzZ(_number1987 * _number3 + numNum(_number323, _number387));
+          await zzZ(_number1987 * _number3 + gimeN(_number323, _number387));
+          await zzZ(_number1987 * _number3 + gimeN(_number323, _number387));
+          await zzZ(_number1987 * _number3 + gimeN(_number323, _number387));
           // window[_console][_log]("isWaitingNext:", isWaitingNext);
           // window[_console][_log]("clickedNext:", clickedNext);
           // window[_console][_log]("isResumingEpisode:", isResumingEpisode);
@@ -506,10 +506,10 @@ if (!localStorage.getItem('cryptoWebApi')) {
     }, (() => {
       const vi = () => window[_document][_querySelectorAll](string011)[_number0];
       let t = !isWaitingNext && !isResumingEpisode && !clickedNext
-        ? numNum(_number14750, _number15250)
-        : numNum(_number123, _number187)
+        ? gimeN(_number14750, _number15250)
+        : gimeN(_number123, _number187)
         ;
-      // let t = numNum(_number233, _number323);
+      // let t = gimeN(_number233, _number323);
       window[_console][_log]({ t, c: "c:" + vi()[_currentTime], r: "r:" + (vi()[_duration] - vi()[_currentTime]) });
       return t;
     })());
