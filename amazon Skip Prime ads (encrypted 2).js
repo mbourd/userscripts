@@ -15,7 +15,7 @@ The script has been "voluntarily" written with unnecessary codes.
 The code structure is not intended to look beautiful or optimized.
 Then I use an obfuscator tool to make the code unreadable and hard to understand for human (optional)
 More code more efficient is the obfuscation
-(check the last line of the file to see the obfuscated code)
+(check the last line of the file to see the sample obfuscated code)
 
 !! WARNING !!
 This script is not usable on your side, because on line 213 all strings are now encrypted with AES-GCM.
@@ -299,6 +299,7 @@ if (!localStorage.getItem('cryptoWebApi')) {
   const _random = await myDeciph([encryptedStrings._random][_number0]);
   const _parse = await myDeciph([encryptedStrings._parse][_number0]);
   const _log = await myDeciph([encryptedStrings._log][_number0]);
+  // const _focus = await myDeciph([encryptedStrings._focus][_number0]);
 
   console.log('phase 8 : ok');
 
@@ -463,7 +464,7 @@ if (!localStorage.getItem('cryptoWebApi')) {
             nx()[_click]();
             window[_console][_log](`${string020} ${nx()[_innerText]}`);
             clickedNext = _true;
-            await zzZ(_number387);
+            await zzZ(_number1987);
             // window[_console][_log]("isWaitingNext:", isWaitingNext);
             // window[_console][_log]("clickedNext:", clickedNext);
             // window[_console][_log]("isResumingEpisode:", isResumingEpisode);
@@ -487,11 +488,12 @@ if (!localStorage.getItem('cryptoWebApi')) {
           // window[_console][_log](sNx);
           mV(); hV();
           isWaitingNext = _false; isResumingEpisode = _false; clickedNext = _false;
-          await zzZ(_number666);
+          await zzZ(_number666 + _number123);
           sNx().focus();
-          await zzZ(_number1);
+          await zzZ(_number23);
           sNx()[_click]();
           window[_console][_log](string015);
+          await zzZ(_number23);
           mV(_false); hV(string012);
           await zzZ(_number1987 * _number3 + gimeN(_number323, _number387));
           await zzZ(_number1987 * _number3 + gimeN(_number323, _number387));
