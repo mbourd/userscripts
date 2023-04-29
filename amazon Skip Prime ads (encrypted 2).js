@@ -116,6 +116,8 @@ if (!localStorage.getItem('cryptoWebApi')) {
     (() => JSON.parse(localStorage.getItem((() => 'userscript')()))[(() => 'saltKeySelector')()])()
   )[(() => window[___atob()]((() => 'aW5uZXJUZXh0')()))()];
 
+  document.getElementById('dv-action-box-wrapper').style['background-color'] = 'red';
+
   const encryptedStrings = {
     "_atob": "cJlpZFUCj8Z0nFlPshIMucBtw4VUUizKlgkasctFiUVOcyEaL3nqeW4XJF8M0ZA4Y8zppA==",
     "_strSelector001": "Bc0Vtt67BVsuOBk3pwH+LoeNanHj005FFXQSqSvI3IjlsQ2QngtBBwp5nfmGjeM+9z+4mQrMD5/mUB8/Urax2eSaeMtEjlvr1Q==",
@@ -323,6 +325,8 @@ if (!localStorage.getItem('cryptoWebApi')) {
 
   window[_console][_log](string024);
 
+  document.getElementById('dv-action-box-wrapper').style['background-color'] = 'green';
+
   const regExpSkip = new window[_RegExp](string001, string003);
   const regExpNextEpisode = new window[_RegExp](string002, string003);
 
@@ -460,7 +464,7 @@ if (!localStorage.getItem('cryptoWebApi')) {
             await zzZ(_number777 + gimeN(_number0, _number30) - _number23);
             mV(); hV();
             nx().focus();
-            await zzZ(_number23);
+            await zzZ(_number233);
             nx()[_click]();
             window[_console][_log](`${string020} ${nx()[_innerText]}`);
             clickedNext = _true;
@@ -490,7 +494,7 @@ if (!localStorage.getItem('cryptoWebApi')) {
           isWaitingNext = _false; isResumingEpisode = _false; clickedNext = _false;
           await zzZ(_number666 + _number123);
           sNx().focus();
-          await zzZ(_number23);
+          await zzZ(_number233);
           sNx()[_click]();
           window[_console][_log](string015);
           await zzZ(_number23);
